@@ -27,11 +27,13 @@ These are the required software and hardware
 
 ### Software
  - tailscale
- - home assistent 
+ - home assistent
+ - Google drive for backup
 
 
 ### Hardware
 
+- Server
 
 
 > You can find extra information to buy the right components [here](./HARDWARE.md).
