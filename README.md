@@ -26,7 +26,8 @@
 These are the required software and hardware
 
 ### Software
-
+ - tailscale
+ - home assistent 
 
 
 ### Hardware
