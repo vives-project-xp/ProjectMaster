@@ -1,3 +1,3 @@
-zigbee knoppen
-NFC tags
-sensor
+- zigbee knoppen
+- NFC tags
+- sensor
