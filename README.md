@@ -30,8 +30,8 @@ Home Assistant als centraal beheersysteem om projecten van medestudenten aan te 
 These are the required software and hardware
 
 ### Software
- - tailscale
- - home assistent
+ - Tailscale
+ - home assistant
  - Google drive for backup
 
 > You can find extra information to buy the right components [here](./documentation/SOFTWARE.md).
