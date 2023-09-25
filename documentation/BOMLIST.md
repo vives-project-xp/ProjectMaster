@@ -1,0 +1,4 @@
+- zigbee knoppen
+- NFC tags
+- sensor
+- conbee usb adaptor
