@@ -5,9 +5,6 @@
 
 ## Backup in google drive
 
-Backup in google drive 
-
-
 
 ### Detailed Install Instructions
 1. Navigate in your Home Assistant frontend to Settings -> Add-ons -> Add-on Store (Bottom Right).
