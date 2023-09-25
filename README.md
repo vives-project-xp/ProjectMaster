@@ -21,6 +21,7 @@
 
 ## Short Discription
 
+Home Assistant als centraal beheersysteem om projecten van medestudenten aan te sturen.
 
 
 ## Required
