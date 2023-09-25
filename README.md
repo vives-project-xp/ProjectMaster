@@ -30,7 +30,11 @@ Home Assistant as central management system for projects from students.
 These are the required software and hardware
 
 ### Software
+<<<<<<< HEAD
  - tailscale
+=======
+ - Tailscale
+>>>>>>> 0076de76167f0af2a459aec1d73ef5b63d1451d4
  - home assistant
  - Google drive for backup
 
