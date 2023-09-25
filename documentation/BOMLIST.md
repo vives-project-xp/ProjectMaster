@@ -1,3 +1,4 @@
 - zigbee knoppen
 - NFC tags
 - sensor
+- google home scherm
