@@ -31,7 +31,7 @@ These are the required software and hardware
  - home assistent
  - Google drive for backup
 
-> You can find extra information to buy the right components [here](./HARDWARE.md).
+> You can find extra information to buy the right components [here](./SOFTWARE.md).
 
 ### Hardware
 
