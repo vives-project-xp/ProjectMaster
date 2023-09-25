@@ -17,6 +17,7 @@
 - [Maintainers](#maintainers)
 - [project photos](#mood-images)
 - [powerpoint](#Powerpoint)
+- [Bom-list](#bom-list)
 - [links](#links)
 
 ## Short Discription
@@ -70,7 +71,7 @@ Download our powerpoint. [here](https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_c
 
 ## BOM list
 
-You can find The BOm list [here](./documentation/BOMLIST.md).
+You can find The Bom list [here](./documentation/BOMLIST.md).
 
 
 ## links
