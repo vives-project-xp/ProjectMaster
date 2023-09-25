@@ -41,7 +41,7 @@ These are the required software and hardware
 
 ## Installation
 
-> You can find all the information to install this project [here](./INSTALLATION.md).
+> You can find all the information to install this project [here](./documentation/INSTALLATION.md).
 
 ## Configuration
 
