@@ -16,6 +16,7 @@
 - [FAQ](#faq)
 - [Maintainers](#maintainers)
 - [project photos](#mood-images)
+- [links to powerpoint](#Powerpoint)
 
 ## Short Discription
 
@@ -30,13 +31,12 @@ These are the required software and hardware
  - home assistent
  - Google drive for backup
 
+> You can find extra information to buy the right components [here](./HARDWARE.md).
 
 ### Hardware
 
 - Server
 
-
-> You can find extra information to buy the right components [here](./HARDWARE.md).
 
 ## Installation
 
@@ -62,6 +62,6 @@ Made by
 ## mood images
 
 
-## Link to video and powerpoint
+## Powerpoint
 
-Download our powerpoint and video [here](vives.be)
+Download our powerpoint. [here](vives.be)
