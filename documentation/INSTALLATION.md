@@ -3,6 +3,7 @@
 ## Table of contents
 
  - Backup in google drive 
+ - Tailscale on Home Assistant
 
 ## Backup in google drive
 
