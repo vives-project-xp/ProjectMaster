@@ -27,3 +27,19 @@ Note: Home Assistant loads the repository in the background and the new item won
 7. Click the Authenticate with Drive button to link the add-on with your Google Drive account. Alternatively, you can generate your own Google API credentials, though the process is not simple.
 
 8. You should be redirected automatically to the backup status page. Here you can make a new backups, see the progress of uploading to Google Drive, etc. You're done!
+
+
+
+
+## Tailscale installeren op Home Assistant
+
+### Installatie
+
+follow the link to a youtube video that explains what to do with tailscale
+
+https://www.youtube.com/watch?v=okRHCU-FcgU&ab_channel=fixtSE 
+
+### username
+
+username: pmvivesbrugge@gmail.com
+password: <Beenhesp>!

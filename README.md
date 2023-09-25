@@ -73,3 +73,4 @@ Download our powerpoint. [here](https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_c
 ## links
 
 - https://github.com/sabeechen/hassio-google-drive-backup 
+- https://www.youtube.com/watch?v=okRHCU-FcgU&ab_channel=fixtSE
