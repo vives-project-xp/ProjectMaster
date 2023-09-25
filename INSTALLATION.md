@@ -7,7 +7,7 @@
 
 Backup in google drive 
 
-https://github.com/sabeechen/hassio-google-drive-backup 
+
 
 ### Detailed Install Instructions
 1. Navigate in your Home Assistant frontend to Settings -> Add-ons -> Add-on Store (Bottom Right).
