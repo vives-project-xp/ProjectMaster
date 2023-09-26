@@ -17,7 +17,7 @@
 - [Maintainers](#maintainers)
 - [project photos](#mood-images)
 - [powerpoint](#Powerpoint)
-- [Bom-list](#bom-list)
+- [Bom-list](./documentation/BOMLIST.md)
 - [links](#links)
 
 ## Short Description

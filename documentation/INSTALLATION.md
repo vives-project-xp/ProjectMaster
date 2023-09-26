@@ -17,7 +17,7 @@
 3. Reload the page , scroll to the bottom to find the new repository, and click the new add-on named "Home Assistant Google Drive Backup":
 
 
-Note: Home Assistant loads the repository in the background and the new item won't always show up automatically. You might need to wait a few seconds and then "hard refesh" the page for it to show up. On most browser the keyboard shortcut for this is CTRL+F5. If it still doesn't show up, clear your browser's cache and it should then.
+Note: Home Assistant loads the repository in the background and the new item won't always show up automatically. You might need to wait a few seconds and then "hard refresh" the page for it to show up. On most browser the keyboard shortcut for this is CTRL+F5. If it still doesn't show up, clear your browser's cache and it should then.
 
 4. Click Install and give it a few minutes to finish downloading.
 
@@ -32,9 +32,9 @@ Note: Home Assistant loads the repository in the background and the new item won
 
 
 
-## Tailscale installeren op Home Assistant
+## Tailscale instillers op Home Assistant
 
-### Installatie
+### Installation
 
 follow the link to a youtube video that explains what to do with tailscale
 
