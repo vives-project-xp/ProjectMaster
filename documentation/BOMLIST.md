@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Bom List
  | Name | Price | Count | Total | Link | Reason |
  | --- | --- | --- | --- | --- | --- |
@@ -6,3 +7,9 @@
  | combee usb adaptor | Price | Count | Total | [link](#https://www.robbshop.nl/conbee-2-deconz-zigbee-usb-dongle) | connects zigbee devices |
  | Raspberry Pi 4 Model B - 2GB | 54,95 | 1 | Total | [link](#https://www.kiwi-electronics.com/nl/raspberry-pi-4-model-b-2gb-4267?search=raspberry%204) | holds the code for the zigbee devices |
  | /- | /- | /- | Total | /- | /- |
+=======
+- zigbee knoppen
+- NFC tags
+- sensor
+- google home scherm
+>>>>>>> a2406a99d37e9ae137f89a2d673d19f886f2ec64
