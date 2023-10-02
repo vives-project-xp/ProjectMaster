@@ -45,6 +45,15 @@ https://www.youtube.com/watch?v=okRHCU-FcgU&ab_channel=fixtSE
 - username: pmvivesbrugge@gmail.com 
 - password: <Beenhesp> ..........
 
+## Installing docker
+
+### Installation
+
+do
+```sudo apt install docker.io```
+to download docker in the terminal
+
+<todo-add-container>
 
 
 
