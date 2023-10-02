@@ -27,16 +27,48 @@ client.on('connect', () => {
     client.publish('PM/Lannootree', 'Hello, MQTT!');
     console.log('Message published');
   }, 2000);*/
-  setInterval(() => {
+  /*setInterval(() => {
     client.publish('PM/Lannootree', 'Hello, MQTT!');
     console.log('Message published');
   }, 1000); // 60000 milliseconds = 1 minute
+});*/
 });
+// Publish a message after a short delay
+  /*setTimeout(() => {
+    const messageData = {
+      "rgb": "FF0000",
+      "status": "ingeschakeld"
+    };
+    const jsonMessage = JSON.stringify(messageData);
+    client.publish('PM/Lannootree', jsonMessage);
+    console.log('Message published:', jsonMessage);
+  }, 1000); // 1000 milliseconds = 1 second
+  });*/
+/*setInterval(() => {
+  const messageData = {
+    "rgb": "FF0000",
+    "status": "ingeschakeld"
+  };
+  const jsonMessage = JSON.stringify(messageData);
+  client.publish('PM/Lannootree', jsonMessage);
+  console.log('Message published:', jsonMessage);
+}, 1000); // 1000 milliseconds = 1 second
+});*/
 
-// Handle incoming messages
+/*// Handle incoming messages
 client.on('message', (topic, message) => {
   console.log(`Received message on topic "${topic}": ${message.toString()}`);
+});*/
+client.on('message', (topic, message) => {
+  console.log(`Received message on topic "${topic}": ${message.toString()}`);
+  const data = JSON.parse(message.toString());
+  const rgbValue = data.rgb;
+  const deviceStatus = data.status;
+
+  console.log(`Received RGB value: ${rgbValue}`);
+  console.log(`Received device status: ${deviceStatus}`);
 });
+
 
 // Handle errors
 client.on('error', (err) => {
