@@ -85,3 +85,4 @@ You can find The Bom list [here](./documentation/BOMLIST.md).
 
 - https://github.com/sabeechen/hassio-google-drive-backup 
 - https://www.youtube.com/watch?v=okRHCU-FcgU&ab_channel=fixtSE
+- https://github.com/emqx/emqx
