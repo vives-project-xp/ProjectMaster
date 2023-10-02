@@ -50,7 +50,9 @@ https://www.youtube.com/watch?v=okRHCU-FcgU&ab_channel=fixtSE
 ### Installation
 
 do
-```sudo apt install docker.io```
+```
+sudo apt install docker.io
+```
 to download docker in the terminal
 
 <todo-add-container>
