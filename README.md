@@ -23,9 +23,8 @@
 ## Short Description
 
 Home Assistant as central management system for projects made by students.
-This project uses mqtt, home-assistant, github, nodered and nodejs.
-Whit this management system we have the aim of interacting whit other projects or devices that you connect on it.
-whit an basic interaction to turn that device's on or off, change color, change scene and more.
+This project uses MQTT, home-assistant, GitHub, node red and Node.js. With this management system, we have the aim of interacting with other projects or devices to make them available in a central place.
+With a basic interaction to turn that device's on or off, change color, change scene and more.
 
 
 ## Required
