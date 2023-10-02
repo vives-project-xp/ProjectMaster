@@ -32,7 +32,7 @@ Note: Home Assistant loads the repository in the background and the new item won
 
 
 
-## Installing Taailscale on Home Assistant
+## Installing Tailscale on Home Assistant
 
 ### Installation
 
