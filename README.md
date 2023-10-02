@@ -56,7 +56,11 @@ These are the required software and hardware
 
 ## Maintainers
 
-Made by
+Made by:
+ - Ibe Packo
+ - Robbe Verhelst
+ - Xander Claessens
+ - Gert De Craemere
 
 ## project Idea
 
