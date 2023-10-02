@@ -22,7 +22,7 @@
 
 ## Short Description
 
-Home Assistant as central management system for projects from students.
+Home Assistant as central management system for projects made by students.
 
 
 ## Required
