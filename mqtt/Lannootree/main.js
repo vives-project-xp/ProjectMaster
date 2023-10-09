@@ -27,15 +27,18 @@ client.on('connect', () => {
 
 client.on('message', (topic, message) => {
   console.log(`Received message on topic "${topic}"`);  //: ${message.toString()}
-  const data = JSON.parse(message.toString());
-  const rgbValue = data.rgb;
-  const deviceStatus = data.command;
-  const media = data.media_id;
+  try{
+    const data = JSON.parse(message.toString());
+    const rgbValue = data.rgb;
+    const deviceStatus = data.command;
+    const media = data.media_id;
 
-  console.log(`Received RGB value: ${rgbValue}`);
-  console.log(`Received device status: ${deviceStatus}`);
-  console.log(`Received device texture playing: ${media}`);
-
+    console.log(`Received RGB value: ${rgbValue}`);
+    console.log(`Received device status: ${deviceStatus}`);
+    console.log(`Received device texture playing: ${media}`);
+  } catch (error) {
+    console.error('Error parsing JSON:', error);
+  }
 });
 
 
