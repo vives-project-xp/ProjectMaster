@@ -120,7 +120,7 @@ username : Nodered
 
 ### Lannootree
 
-| Action  	|  Permission 	|   Topic	|   	|   	|
+| Action  	|  Permission 	|   Topic	| 
 |---	|---	|---	|---	|---	|
 |  Publish & Subscribe	|  Deny 	|  	$SYS/# 	| 
 |  Publish & Subscribe	|  Allow 	|  PM/Lannootree	|   	
