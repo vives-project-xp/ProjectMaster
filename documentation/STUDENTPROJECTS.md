@@ -12,7 +12,7 @@ Hier vermeldt men de structuur voor de topics.
 Om een connectie te verkrijgen verbind met de de MQTT (zie [link](https://www.home-assistant.io/getting-started/) voor MQTT download) verbind met 10.11.0.6 als IP address.
 
 ## Broker
-We gebruiken EMQX als de Broker, subribe dus best EMQX.([link](https://www.emqx.io/) en [document](https://www.emqx.io/) voor instalatie)
+We gebruiken EMQX als de Broker, subribe dus best EMQX.([link](https://www.emqx.io/) en [document](./EMQX.md) voor instalatie)
 
 ## Data
 maak een json aan en geef dit aan de Admins die dan de json toevoegen aan de data.
@@ -69,6 +69,7 @@ PM/project/effect
 ```
 <!--add new command topics here-->
 ### current project topics
+ - [PM/](../README.md)
  - [MLT/](https://github.com/vives-project-xp/MusicLightTiles)
  - [DL/](https://github.com/vives-project-xp/DancingLight)
  - [TL/](https://github.com/vives-project-xp/TrackingLights)
