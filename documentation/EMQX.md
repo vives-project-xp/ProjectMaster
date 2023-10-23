@@ -120,17 +120,13 @@ username : Nodered
 
 * Lannootree
 
-|   Action	|  Permission	|  Topic 	|   
-|---	|---	|---	|---	|---	|
-|   Publish & Subscribe	|  Allow 	| PM/Lannootree/Lannootree/effect      |   	
-|   Publish & Subscribe	|  Allow	| PM/Lannootree/Lannootree/command	|   	
-|   Publish & Subscribe	|  Allow	| PM/Lannootree/Lannootree/rgb 	|   	 	
+| 	
 	
 | Action  	|  Permission 	|   Topic	|   	|   	|
 |---	|---	|---	|---	|---	|
-|   	|   	|   	|   	|   	|
-|   	|   	|   	|   	|   	|
-|   	|   	|   	|   	|   	|
+|  Publish & Subscribe 	|  Allow 	|  PM/Lannootree/Lannootree/effect 	|
+|  Publish & Subscribe 	|  Allow 	|  PM/Lannootree/Lannootree/command	|
+|   Publish & Subscribe	|  Allow 	|  PM/Lannootree/Lannootree/rgb 	|   	
 
 
 
