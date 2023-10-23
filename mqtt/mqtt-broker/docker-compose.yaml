@@ -4,6 +4,13 @@ services:
   emqx1:
     image: emqx/emqx:5.2.1
     container_name: emqx
+    environment:
+    - "EMQX_NODE_NAME=emqx@Projectmaster"
+    - "EMQX_CLUSTER__DISCOVERY_STRATEGY=static"
+    - "EMQX_CLUSTER__STATIC__SEEDS=[emqx@Projectmaster]"
+    - "EMQX_LISTENER__SSL__EXTERNAL__CERTFILE=etc/certs/emqx.pem"
+    - "EMQX_LISTENER__SSL__EXTERNAL__CACERTFILE=etc/certs/ca.pem"
+    - "EMQX_LISTENER__SSL__EXTERNAL__KEYFILE=etc/certs/emqx.key"
     ports:
       - 1883:1883
       - 8083:8083
