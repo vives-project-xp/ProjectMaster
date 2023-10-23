@@ -74,7 +74,7 @@ Made by:
 
 ## Powerpoint
 
-Download our powerpoint. [here](https://vivesonline-my.sharepoint.com/:p:/r/personal/r0901019_student_vives_be/Documents/ProjectMaster/powerpointDemo.pptx?d=wbc761bbaeb4047ccafa8a8e0fbc505a6&csf=1&web=1&e=dfdWOi)
+Download our powerpoint. [here](https://vivesonline-my.sharepoint.com/:f:/g/personal/r0901019_student_vives_be/Erk_sTz_4S9MkCufZ0eB564B7aQfrfN3rfPNdLfrI6m4tA?e=XpYHaS)
 Dowload Our Poster. [here](./documentation/project-canvas.pdf)
 
 ## BOM list
