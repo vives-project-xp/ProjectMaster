@@ -125,9 +125,18 @@ username : Nodered
 | Publish & Subscribe |  Deny | $SYS/# |
 | Publish & Subscribe |    Allow   |  PM/Lannootree |
 
+
+### Music Light tiles
+
 | Action   |      Permission  |  Topic |
 |----------|-------------|------|
 | Publish & Subscribe |  Deny | $SYS/# |
 | Publish & Subscribe |    Allow   |  PM/MLT |
 
 
+### EOMarkers
+
+| Action   |      Permission  |  Topic |
+|----------|-------------|------|
+| Publish & Subscribe |  Deny | $SYS/# |
+| Publish & Subscribe |    Allow   |  PM/EOMarkers |
