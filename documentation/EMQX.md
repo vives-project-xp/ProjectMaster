@@ -118,15 +118,13 @@ username : Nodered
 
 ## Authorization
 
-* Lannootree
+### Lannootree
 
-| 	
-	
 | Action  	|  Permission 	|   Topic	|   	|   	|
 |---	|---	|---	|---	|---	|
 |  Publish & Subscribe 	|  Allow 	|  PM/Lannootree/Lannootree/effect 	|
 |  Publish & Subscribe 	|  Allow 	|  PM/Lannootree/Lannootree/command	|
-|   Publish & Subscribe	|  Allow 	|  PM/Lannootree/Lannootree/rgb 	|   	
+|  Publish & Subscribe	|  Allow 	|  PM/Lannootree/Lannootree/rgb 	|   	
 
 
 
