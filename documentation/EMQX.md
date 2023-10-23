@@ -108,9 +108,9 @@ username : RL
 username : Nodered
 
 
-#### Acces
+#### Access
 - If you need password ask the admin
-- if you need acces to mqtt explorer ask admin
+- if you need access to mqtt explorer ask admin
 
 
 
