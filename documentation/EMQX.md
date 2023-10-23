@@ -8,32 +8,32 @@
 1. To get the Docker image, run: bash
 
 ``` YML
-{
+
   docker pull emqx/emqx:5.3.0
-}
+
 ```
 
 2. To start the Docker container, run:
 
 ``` YML
-{
+
   docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8084:8084 -p 8883:8883 -p 18083:18083  emqx:5.3.0
-}
+
 ```
 
 3. make the git ignore
 ``` YML
-{
+
 
 emqx1_data
 
-}
+
 ```
 
 
 4. Make a docker compose file
 ``` YML
-{
+
 version: '3'
 
 services:
@@ -55,15 +55,15 @@ services:
       - 18083:18083 
     volumes:
       - ./emqx1_data:/opt/emqx/data
-}
+
 ```
 
 5. run the docker compose  file
 
 ``` YML
-{
+
  docker-compose up
-}
+
 ```
 
 #### documentation
