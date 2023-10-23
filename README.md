@@ -18,6 +18,7 @@
 - [project photos](#mood-images)
 - [powerpoint](#Powerpoint)
 - [Bom-list](./documentation/BOMLIST.md)
+- [EMQX](./documentation/EMQX.md)
 - [links](#links)
 
 ## Short Description
