@@ -2,6 +2,8 @@
 
 ## Table of contents
 
+* Installation
+* 
 
 ## Installation
 
@@ -68,3 +70,51 @@ services:
 
 #### documentation
 https://www.emqx.io/docs/en/latest/deploy/install-docker.html
+
+
+
+## Clients
+
+### Lannootree
+
+    username: Lannootree
+
+
+### EOMarkers
+
+    username:  
+    - 10:91:A8:F1:0F:7C
+    - 58:CF:79:E2:9A:BC	
+    - 58:CF:79:E2:C6:C4	
+    - 58:CF:79:E3:7F:A4	
+
+### Tracking light
+
+    username : Aurora
+
+
+### Dancing light
+
+    username : DL
+
+### Raining leds
+
+    username : RL
+
+
+### Nodered
+
+    username : Nodered
+
+
+#### Acces
+    - If you need password ask the admin
+    - if you need acces to mqtt explorer ask admin
+
+
+
+
+
+
+
+
