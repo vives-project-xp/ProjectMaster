@@ -1,73 +1,186 @@
-const mqtt = require('mqtt');
+
+
+import mqtt from "mqtt";
+import fs from "fs";
 
 // Define the MQTT broker URL and port
-const brokerUrl = 'mqtt://mqtt.devbit.be';
+const brokerUrl = 'mqtt://projectmaster.devbit.be';
 const brokerPort = 1883;
 
-const brokerUrl2 = 'mqtt://mqtt.lannootree.org';
-const brokerPort2 = 1883;
+const brokerUrl2 = 'mqtt://fenix.devbit.be';
+const brokerPort2 = 38883;
+
+
 
 
 // Create an MQTT client
-const client = mqtt.connect(`${brokerUrl}:${brokerPort}`);
+
+var options1 = {
+  port: "1883",
+  host: "projectmaster.devbit.be",
+  protocol:'mqtt',
+  rejectUnauthorized : false,
+  username : "Lannootree",
+  password : "Lannootree"
+ 
+};
+const client = mqtt.connect(options1);
+
+var caFile = fs.readFileSync("./ca.crt");
+var clientcrt = fs.readFileSync("./client.crt");
+var clientkey = fs.readFileSync("./client.key");
+var options = {
+  port: "38883",
+  host: "fenix.devbit.be",
+  protocol:'mqtts',
+  rejectUnauthorized : false,
+  ca:caFile,
+  cert: clientcrt,
+  key: clientkey,
+ 
+};
+const client2 = mqtt.connect(options);
+
+
+function setColor(rgb) {
+      const rgbString = rgb.toString(); // De string "163,202,255"
+      const rgbArray = rgbString.split(','); // Splitten op komma
+
+      // Controleren of we drie waarden hebben
+      if (rgbArray.length === 3) {
+         var r = parseInt(rgbArray[0], 10); // Eerste waarde als rode component
+         var g = parseInt(rgbArray[1], 10); // Tweede waarde als groene component
+         var b = parseInt(rgbArray[2], 10); // Derde waarde als blauwe component
+
+        console.log(`R: ${r}, G: ${g}, B: ${b}`);
+
+        // Nu heb je de individuele R, G en B-componenten in de variabelen r, g en b.
+      } else {
+        console.error('Ongeldige RGB-string: moet drie waarden bevatten');
+      }
+      client2.publish('controller/in', `{"command": "stop"}`); //`{"command": "play_media", "media_id": ${media}}`    ${data} ==> werkt niet    {"command": "play_media", "media_id": "3"}   ${message.toString()}
+      setTimeout(() => {}, 50);
+      client2.publish('controller/in', `{"command": "color", "red": ${r}, "green": ${g}, "blue": ${b}}`); //`{"command": "play_media", "media_id": ${media}}`    ${data} ==> werkt niet    {"command": "play_media", "media_id": "3"}   ${message.toString()}
+      setTimeout(() => {}, 50);
+      client2.publish('controller/in', `{"command": "color", "red": ${r}, "green": ${g}, "blue": ${b}}`); //`{"command": "play_media", "media_id": ${media}}`    ${data} ==> werkt niet    {"command": "play_media", "media_id": "3"}   ${message.toString()}
+      console.log(`Message published tree : {"command": "color", "red": ${r}, "green": ${g}, "blue": ${b}}` );
+
+}
+
+function setEffect(effect) {
+    const effectID = effect.toString(); 
+    var firstNumber = parseFloat(effectID.match(/\d+/));
+    console.log(firstNumber); // This will log the first number in the string
+
+
+    client2.publish('controller/in', `{"command": "play_media", "media_id": ${firstNumber}}`); //`{"command": "play_media", "media_id": ${media}}`    ${data} ==> werkt niet    {"command": "play_media", "media_id": "3"}   ${message.toString()}
+    console.log(`Message published tree : {"command": "play_media", "media_id": ${firstNumber}}` );
+}
+
+function off(messageOFF){
+      const command = messageOFF.toString();
+      if(command == "OFF"){
+        client2.publish('controller/in', `{"command": "stop"}`); //`{"command": "play_media", "media_id": ${media}}`    ${data} ==> werkt niet    {"command": "play_media", "media_id": "3"}   ${message.toString()}
+        setTimeout(() => {}, 50);
+        client2.publish('controller/in', `{"command": "color", "red": 0, "green": 0, "blue": 0}`); //`{"command": "play_media", "media_id": ${media}}`    ${data} ==> werkt niet    {"command": "play_media", "media_id": "3"}   ${message.toString()}
+        setTimeout(() => {}, 50);
+        client2.publish('controller/in', `{"command": "color", "red": 0, "green": 0, "blue": 0}`); //`{"command": "play_media", "media_id": ${media}}`    ${data} ==> werkt niet    {"command": "play_media", "media_id": "3"}   ${message.toString()}
+        console.log(`Message published tree : {"command": "color", "red": 0, "green": 0, "blue": 0}` );
+        
+      }
+    else{
+      console.log("device on")
+      
+    }
+
+    
+
+
+
+}
+
 
 // Handle connection events
 client.on('connect', () => {
-  console.log('Connected to MQTT broker');
+  console.log('Connected to MQTT broker projectmaster');
   
   // Subscribe to a topic
-  client.subscribe('PM/Lannootree', (err) => {
+  client.subscribe('PM/Lannootree/Lannootree/command', (err) => {
     if (!err) {
-      console.log('Subscribed to "PM/Lannootree"');
+      console.log('Subscribed to "PM/Lannootree/Lannootree/command"');
     }
   });
 
-  // Publish a message after a short delay
-  /*setTimeout(() => {
-    client.publish('PM/Lannootree', 'Hello, MQTT!');
-    console.log('Message published');
-  }, 2000);*/
-  /*setInterval(() => {
-    client.publish('PM/Lannootree', 'Hello, MQTT!');
-    console.log('Message published');
-  }, 1000); // 60000 milliseconds = 1 minute
-});*/
-});
-// Publish a message after a short delay
-  /*setTimeout(() => {
-    const messageData = {
-      "rgb": "FF0000",
-      "status": "ingeschakeld"
-    };
-    const jsonMessage = JSON.stringify(messageData);
-    client.publish('PM/Lannootree', jsonMessage);
-    console.log('Message published:', jsonMessage);
-  }, 1000); // 1000 milliseconds = 1 second
-  });*/
-/*setInterval(() => {
-  const messageData = {
-    "rgb": "FF0000",
-    "status": "ingeschakeld"
-  };
-  const jsonMessage = JSON.stringify(messageData);
-  client.publish('PM/Lannootree', jsonMessage);
-  console.log('Message published:', jsonMessage);
-}, 1000); // 1000 milliseconds = 1 second
-});*/
 
-/*// Handle incoming messages
-client.on('message', (topic, message) => {
-  console.log(`Received message on topic "${topic}": ${message.toString()}`);
-});*/
-client.on('message', (topic, message) => {
-  console.log(`Received message on topic "${topic}": ${message.toString()}`);
-  const data = JSON.parse(message.toString());
-  const rgbValue = data.rgb;
-  const deviceStatus = data.status;
-
-  console.log(`Received RGB value: ${rgbValue}`);
-  console.log(`Received device status: ${deviceStatus}`);
 });
+
+client.on('connect', () => {
+  console.log('Connected to MQTT broker projectmaster');
+  
+  // Subscribe to a topic
+  client.subscribe('PM/Lannootree/Lannootree/effect', (err) => {
+    if (!err) {
+      console.log('Subscribed to "PM/Lannootree/Lannootree/effect"');
+    }
+  });
+
+
+});
+
+client.on('connect', () => {
+  console.log('Connected to MQTT broker projectmaster');
+  
+  // Subscribe to a topic
+  client.subscribe('PM/Lannootree/Lannootree/rgb', (err) => {
+    if (!err) {
+      console.log('Subscribed to "PM/Lannootree/Lannootree/rgb"');
+    }
+  });
+
+
+});
+
+client2.on('connect', () => {
+  console.log('Connected to MQTT broker Tree');
+  
+  // Subscribe to a topic
+  client2.subscribe('controller/in', (err) => {
+    if (!err) {
+      console.log('Subscribed to "controller/in"');
+    }
+  });
+
+});
+   
+client.on('message', (topic, message) => {
+  console.log(`Received message on topic "${topic}"`);  
+  try{
+    
+
+    if(topic == "PM/Lannootree/Lannootree/effect"){
+      setEffect(message)
+       
+    }
+    else if((topic == "PM/Lannootree/Lannootree/rgb" )){  
+      setColor(message);
+
+    }else if((topic == "PM/Lannootree/Lannootree/command")){
+      
+      off(message);
+      
+    }
+    
+
+  
+    
+  } catch (error) {
+    console.error('Error parsing JSON:', error);
+  }
+});
+
+
+  
+  
 
 
 // Handle errors
