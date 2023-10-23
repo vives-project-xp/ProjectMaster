@@ -126,7 +126,7 @@ username : Nodered
 |   Publish & Subscribe	|  Allow	| PM/Lannootree/Lannootree/command	|   	
 |   Publish & Subscribe	|  Allow	| PM/Lannootree/Lannootree/rgb 	|   	 	
 	
-|   	|   	|   	|   	|   	|
+| Action  	|  Permission 	|   Topic	|   	|   	|
 |---	|---	|---	|---	|---	|
 |   	|   	|   	|   	|   	|
 |   	|   	|   	|   	|   	|
