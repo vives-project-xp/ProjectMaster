@@ -122,7 +122,7 @@ username : Nodered
 
 | 	
 	
-| Action  	|  Permission 	|   Topic	|
+| Action  	|  Permission 	|   Topic	|   	|   	|
 |---	|---	|---	|---	|---	|
 |  Publish & Subscribe 	|  Allow 	|  PM/Lannootree/Lannootree/effect 	|
 |  Publish & Subscribe 	|  Allow 	|  PM/Lannootree/Lannootree/command	|
