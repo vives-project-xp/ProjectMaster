@@ -3,7 +3,7 @@
 ## Table of contents
 
 * Installation
-* 
+* Clients
 
 ## Installation
 
