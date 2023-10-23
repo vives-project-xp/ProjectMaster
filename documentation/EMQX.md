@@ -4,6 +4,7 @@
 
 * Installation
 * Clients
+* Security
 
 ## Installation
 
@@ -110,6 +111,19 @@ username : Nodered
 #### Acces
 - If you need password ask the admin
 - if you need acces to mqtt explorer ask admin
+
+
+
+
+
+## Authorization
+
+* Lannootree 
+|   Action	|  Permission	|  Topic 	|   
+|   Publish & Subscribe	|  Allow 	| PM/Lannootree/Lannootree/effect      |   	
+|   Publish & Subscribe	|  Allow	| PM/Lannootree/Lannootree/command	|   	
+|   Publish & Subscribe	|  Allow	| PM/Lannootree/Lannootree/rgb 	|   	 	
+	
 
 
 
