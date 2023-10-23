@@ -108,9 +108,9 @@ username : RL
 username : Nodered
 
 
-#### Acces
+#### Access
 - If you need password ask the admin
-- if you need acces to mqtt explorer ask admin
+- if you need access to mqtt explorer ask admin
 
 
 
@@ -120,15 +120,23 @@ username : Nodered
 
 ### Lannootree
 
-| Action  	|  Permission 	|   Topic	|   	|   	|
-|---	|---	|---	|---	|---	|
-|  Publish & Subscribe 	|  Allow 	|  PM/Lannootree/Lannootree/effect 	|
-|  Publish & Subscribe 	|  Allow 	|  PM/Lannootree/Lannootree/command	|
-|  Publish & Subscribe	|  Allow 	|  PM/Lannootree/Lannootree/rgb 	|   	
-|  Publish & Subscribe	|  Deny 	|  	$SYS/# 	| 
+| Action   |      Permission  |  Topic |
+|----------|-------------|------|
+| Publish & Subscribe |  Deny | $SYS/# |
+| Publish & Subscribe |    Allow   |  PM/Lannootree |
 
 
+### Music Light tiles
+
+| Action   |      Permission  |  Topic |
+|----------|-------------|------|
+| Publish & Subscribe |  Deny | $SYS/# |
+| Publish & Subscribe |    Allow   |  PM/MLT |
 
 
+### EOMarkers
 
-
+| Action   |      Permission  |  Topic |
+|----------|-------------|------|
+| Publish & Subscribe |  Deny | $SYS/# |
+| Publish & Subscribe |    Allow   |  PM/EOMarkers |
