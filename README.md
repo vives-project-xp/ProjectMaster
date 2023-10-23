@@ -22,14 +22,14 @@
 
 ## Short Description
 
-Home Assistant as central management system for projects made by students.
-This project uses MQTT, home-assistant, GitHub, node red and Node.js. With this management system, we have the aim of interacting with other projects or devices to make them available in a central place.
-With a basic interaction to turn that device's on or off, change color, change scene and more.
+Home Assistant is a Central Management System for projects made by students.
+This project uses MQTT, home-assistant, GitHub, node red and Node.js. With this management system, our aim is to interact with other projects or devices to make them available all within a central place.
+Using this system, you can use a basic interaction to turn a device on or off, change color, change a scene and more.
 
 
 ## Required
 
-These are the required software and hardware
+These are the required software and hardware to run the system
 
 ### Software
  - Tailscale
@@ -74,7 +74,7 @@ Made by:
 ## Powerpoint
 
 Download our powerpoint. [here](https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran)
-Dowload Our Poster. [here](https://vivesonline-my.sharepoint.com/:f:/g/personal/r0937303_student_vives_be/EnZxGHNR7BBNhbjRPSCZOQEB5Z1SUFSEeUQmNq461D9abg?e=Ti41gJ)
+Download our Poster. [here](https://vivesonline-my.sharepoint.com/:f:/g/personal/r0937303_student_vives_be/EnZxGHNR7BBNhbjRPSCZOQEB5Z1SUFSEeUQmNq461D9abg?e=Ti41gJ)
 
 ## BOM list
 
