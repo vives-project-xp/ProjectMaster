@@ -74,8 +74,8 @@ Made by:
 
 ## Powerpoint
 
-Download our powerpoint. [here](https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran)
-Dowload Our Poster. [here](https://vivesonline-my.sharepoint.com/:f:/g/personal/r0937303_student_vives_be/EnZxGHNR7BBNhbjRPSCZOQEB5Z1SUFSEeUQmNq461D9abg?e=Ti41gJ)
+Download our powerpoint. [here](https://vivesonline-my.sharepoint.com/:f:/g/personal/r0901019_student_vives_be/Erk_sTz_4S9MkCufZ0eB564B7aQfrfN3rfPNdLfrI6m4tA?e=XpYHaS)
+Dowload Our Poster. [here](./documentation/project-canvas.pdf)
 
 ## BOM list
 

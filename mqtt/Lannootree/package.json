@@ -4,11 +4,13 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "node main.js"
+    "start": "node whatte.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "mqtt": "^5.0.5"
-  }
+    "express": "^4.18.2",
+    "mqtt": "^5.1.1"
+  },
+  "type": "module"
 }
