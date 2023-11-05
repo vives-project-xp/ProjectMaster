@@ -4,6 +4,9 @@
 
  - Backup in google drive 
  - Tailscale on Home Assistant
+ - Installing docker
+ - installing homeassistant with proxmox
+ - installing EMQX 
 
 ## Backup in google drive
 
