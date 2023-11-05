@@ -65,14 +65,8 @@ Made by:
  - Xander Claessens
  - Gert De Craemere
 
-## project Idea
 
-
-
-## mood images
-
-
-## Powerpoint
+## Powerpoint and poster
 
 Download our powerpoint. [here](https://vivesonline-my.sharepoint.com/:f:/g/personal/r0901019_student_vives_be/Erk_sTz_4S9MkCufZ0eB564B7aQfrfN3rfPNdLfrI6m4tA?e=XpYHaS) <br />
 Download our Poster. [here](https://vivesonline-my.sharepoint.com/:f:/g/personal/r0937303_student_vives_be/EnZxGHNR7BBNhbjRPSCZOQEB5Z1SUFSEeUQmNq461D9abg?e=Ti41gJ)
