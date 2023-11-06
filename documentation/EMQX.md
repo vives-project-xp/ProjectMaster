@@ -27,10 +27,7 @@
 3. make the git ignore
 ``` YML
 
-
 emqx1_data
-
-
 ```
 
 
@@ -124,6 +121,14 @@ username : Nodered
 |----------|-------------|------|
 | Publish & Subscribe |  Deny | $SYS/# |
 | Publish & Subscribe |    Allow   |  PM/Lannootree |
+
+
+### Lannootree2
+
+| Action   |      Permission  |  Topic |
+|----------|-------------|------|
+| Publish & Subscribe |  Deny | $SYS/# |
+| Publish & Subscribe |    Allow   |  PM/Lannootree2 |
 
 
 ### Music Light tiles

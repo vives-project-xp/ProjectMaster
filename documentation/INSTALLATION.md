@@ -4,6 +4,9 @@
 
  - Backup in google drive 
  - Tailscale on Home Assistant
+ - Installing docker
+ - installing homeassistant with proxmox
+ - installing EMQX 
 
 ## Backup in google drive
 
@@ -57,5 +60,87 @@ to download docker in the terminal
 
 <todo-add-container>
 
+## Installing home assistant
+
+### Installation
+
+#### Create a Proxmox Bootable USB Drive
+
+1. Download Balena Etcher and install it
+2. Download the latest Proxmox VE ISO Installer and save it
+3. Insert the USB drive in your PC
+4. Open Balena Etcher and click Flash from file
+5. Select the Proxmox ISO file you just downloaded
+6. Click Select target and choose your USB Drive
+7. Click Flash and wait for the process to finish
+8. Depending on the speed of your USB Drive, the process should take ~2-5minutes
+9. You will get a Flash complete! confirmation
+10. Close Balena Etcher
+11. Safely remove hardware (USB)
+12. You are ready to install Proxmox
+
+#### Set up Proxmox and HomeAssitant
+
+1. Open your Proxmox instance by navigating to IP_Address:8006 from your main PC
+2. You will get a warning message Your connection is not private
+3. Click Advanced and click Proceed to IP_Address
+4. On the Promox login screen login with the credentials:
+– Username: root
+– Password: password you set during installation
+5. You will get a message saying you do not have a valid subscription
+– This is showing up because you don’t have a valid enterprise license
+– We will clean this up with a script too
+6. Before we deploy Home Assistant, we need to update Proxmox packages
+7. On the left side of the screen, select your VM and click Updates
+8. Click Refresh and click Upgrade
+9. A dialog window will popup, going through the available package updates
+10. You may get another license warning, just ignore it
+11. If you get a confirmation dialog, type in “y” and hit enter
+12. If you get a dialog asking the Keyboard encoding select UTF-8 and English
+13. You will get a your system is up to date message
+14. Close the window and you are done
+15. If you click Refresh again, the package list should disappear since you already updated them
+16. To Install Home Assistant, we are going to use a script by tteck which will automate the process significantly
+17. Running this script will:
+– Find, download and extract the official KVM (qcow2) Home Assistant OS image
+– Define user settings, import and attach disk, set boot order and start the VM automatically
+– Install the VM with Default Settings: 4GB RAM, 32GB Storage and 2vCPU cores
+– Settings can be tweaked during installation
+18. Click your VM on the left and select Shell
+19. Copy the following command to run the script and hit enter:
+```
+bash -c "$(wget -qLO - https://github.com/tteck/Proxmox/raw/main/vm/haos-vm.sh)"
+```
+20. The wizard will ask you to confirm that you want to create a Home Assistant OS VM
+21. Select Yes and click confirm
+22. On the next screen, choose either Default settings or Advanced
+– Default settings are fine for a Home Assistant OS install, but you can assign more RAM and Storage if you need to
+
+23. If you choose Advanced Settings, you will be prompted to choose:
+– Home Assistant OS Version (Stable, Beta)
+– Hostname (cannot contain underscore ‘_’)
+– VM Machine ID
+– Machine type
+– Allocated CPU Cores
+– Allocated RAM Memory
+24. Select the final Yes to confirm
+25. Wait for the script to download, extract and install the latest KVM image of HA OS
+26. Once you get a Completed Successfully message, HA is installed
+27. To see the IP address your router assigned to your Home Assistant VM instance, click your node on the left
+28. Select your newly created Home Assistant VM
+29. The IP address is displayed in the middle
+– Use it to access Home Assistant in your web browser 192.168.xxx.xxx:8123
+30. Finished, you’ve just install HA OS on Proxmox!
 
 
+
+For photos and origninal content use this link [here](https://smarthomescene.com/guides/how-to-install-home-assistant-on-proxmox-the-easy-way/)
+
+
+
+
+
+
+## EMQX
+
+find on this page all there is to know about EMQX and how to set it up [here](.\EMQX.md).
