@@ -2,21 +2,17 @@
 Hier vermeldt men de structuur voor de topics.
 ## Table of contents
  - [connection](#connection)
- - [broker](#broker)
  - [data](#data)
  - [logins](#logins)
  - [users](#users)
- - [topics](#topics)
+ - [Commands](#Commands)
 
 ## Connection
-Om een connectie te verkrijgen verbind met de de MQTT (zie [link](https://www.home-assistant.io/getting-started/) voor MQTT download) verbind met 10.11.0.6 als IP address.
-
-## Broker
-We gebruiken EMQX als de Broker, subribe dus best EMQX.([link](https://www.emqx.io/) en [document](./EMQX.md) voor instalatie)
+Om een connectie te verkrijgen verbind met de de MQTT (zie [link](https://www.home-assistant.io/getting-started/) voor MQTT download) verbind met projectmaster.devbit.be 
 
 ## Data
 maak een json aan en geef dit aan de Admins die dan de json toevoegen aan de data.
-
+<!--pending change-->
 vb van json:
 ```json
 {
@@ -41,9 +37,9 @@ vb: vives project heeft username vives met passwoord student om in te loggen op 
 **GEEF NOOIT EEN PASWOORD AAN IEMAND BUITEN JE PROJECT OF ZET PASWOORDEN IN EEN COMMIT!!!**
 
 ## Users
-elk groep kan alleen op hun eigen project werken.
+elk groep kan alleen op hun eigen project werken.<!--pending change-->
 
-## Topics
+## Commands
 ### Info
 Vraag om een topic door de admins van PM, deze topic is uniek per project en zal men ervoor zorgen dat er geen conflict is met andere projecten.
 
@@ -67,13 +63,4 @@ effect topic: select a specific effect(mostly from an array)
 ```json
 PM/project/effect
 ```
-<!--add new command topics here-->
-### current project topics
- - [PM/](../README.md)
- - [MLT/](https://github.com/vives-project-xp/MusicLightTiles)
- - [DL/](https://github.com/vives-project-xp/DancingLight)
- - [TL/](https://github.com/vives-project-xp/TrackingLights)
- - [RL/](https://github.com/vives-project-xp/RainingLEDs)
- - [IOB/](https://github.com/vives-project-xp/MusicLightTiles)
- - [Lannootree/](https://github.com/vives-project-xp/Lannootree)
-<!--add new project topics here-->
+
