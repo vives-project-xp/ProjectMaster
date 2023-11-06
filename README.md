@@ -19,6 +19,7 @@
 - [Poster](#Poster)
 - [Bom-list](./documentation/BOMLIST.md)
 - [EMQX](./documentation/EMQX.md)
+- [Studentds](./documentation/STUDENTPROJECTS.md)
 - [links](#links)
 
 ## Short Description
