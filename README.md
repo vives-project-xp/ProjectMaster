@@ -36,6 +36,8 @@ These are the required software and hardware to run the system
  - Tailscale
  - home assistant
  - Google drive for backup
+ - Homeasssistant with proxmox
+ - Docker
 
 > You can find extra information to buy the right components [here](./documentation/SOFTWARE.md).
 
