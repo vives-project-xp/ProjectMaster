@@ -11,9 +11,6 @@
   - [Software](#software)
   - [Hardware](#hardware)
 - [Installation](#installation)
-- [Configuration](#configuration)
-- [Troubleshooting](#troubleshooting)
-- [FAQ](#faq)
 - [Maintainers](#maintainers)
 - [powerpoint](#Powerpoint)
 - [Poster](#Poster)
@@ -40,8 +37,6 @@ These are the required software and hardware to run the system
  - Homeasssistant with proxmox
  - Docker
 
-> You can find extra information to buy the right components [here](./documentation/SOFTWARE.md).
-
 ### Hardware
 
 - Server
@@ -50,15 +45,6 @@ These are the required software and hardware to run the system
 ## Installation
 
 > You can find all the information to install this project [here](./documentation/INSTALLATION.md).
-
-## Configuration
-
-
-## Troubleshooting
-
-
-## FAQ
-
 
 ## Maintainers
 
