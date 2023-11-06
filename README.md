@@ -44,7 +44,7 @@ These are the required software and hardware to run the system
 
 ## Installation
 
-> You can find all the information to install this project [here](./documentation/INSTALLATION.md).
+You can find all the information to install this project [here](./documentation/INSTALLATION.md).
 
 ## Maintainers
 
