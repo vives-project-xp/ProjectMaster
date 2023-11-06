@@ -39,8 +39,6 @@ These are the required software and hardware to run the system
  - Homeasssistant with proxmox
  - Docker
 
-> You can find extra information to buy the right components [here](./documentation/SOFTWARE.md).
-
 ### Hardware
 
 - Server
