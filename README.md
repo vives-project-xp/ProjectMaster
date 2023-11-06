@@ -48,15 +48,6 @@ These are the required software and hardware to run the system
 
 > You can find all the information to install this project [here](./documentation/INSTALLATION.md).
 
-## Configuration
-
-
-## Troubleshooting
-
-
-## FAQ
-
-
 ## Maintainers
 
 Made by:
