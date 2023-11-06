@@ -8,7 +8,13 @@ Hier vermeldt men de structuur voor de topics.
  - [Commands](#Commands)
 
 ## Connection
-Om een connectie te verkrijgen verbind met de de MQTT (zie [link](https://www.home-assistant.io/getting-started/) voor MQTT download) verbind met projectmaster.devbit.be 
+de mqtt broker = projectmaster.devbit.be
+given username and password in own project
+
+Om te troubleshooten maak een verbinding met de de MQTT explorer
+
+![imageConection](./img/imageConection.png)
+
 
 ## Data
 maak een json aan en geef dit aan de Admins die dan de json toevoegen aan de data.
