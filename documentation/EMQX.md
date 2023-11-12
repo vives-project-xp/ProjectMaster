@@ -1,4 +1,4 @@
-# EMQX 
+# EMQX
 
 ## Table of contents
 
@@ -10,7 +10,7 @@
 
 1. To get the Docker image, run: bash
 
-``` YML
+```YML
 
   docker pull emqx/emqx:5.3.0
 
@@ -18,21 +18,22 @@
 
 2. To start the Docker container, run:
 
-``` YML
+```YML
 
   docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8084:8084 -p 8883:8883 -p 18083:18083  emqx:5.3.0
 
 ```
 
 3. make the git ignore
-``` YML
+
+```YML
 
 emqx1_data
 ```
 
-
 4. Make a docker compose file
-``` YML
+
+```YML
 
 version: '3'
 
@@ -60,16 +61,15 @@ services:
 
 5. run the docker compose  file
 
-``` YML
+```YML
 
  docker-compose up
 
 ```
 
 #### documentation
+
 https://www.emqx.io/docs/en/latest/deploy/install-docker.html
-
-
 
 ## Clients
 
@@ -77,19 +77,18 @@ https://www.emqx.io/docs/en/latest/deploy/install-docker.html
 
 username: Lannootree
 
-
 ### EOMarkers
 
-username:  
+username:
+
 - 10:91:A8:F1:0F:7C
-- 58:CF:79:E2:9A:BC	
-- 58:CF:79:E2:C6:C4	
-- 58:CF:79:E3:7F:A4	
+- 58:CF:79:E2:9A:BC
+- 58:CF:79:E2:C6:C4
+- 58:CF:79:E3:7F:A4
 
 ### Tracking light
 
 username : Aurora
-
 
 ### Dancing light
 
@@ -99,49 +98,48 @@ username : DL
 
 username : RL
 
-
 ### Nodered
 
 username : Nodered
 
-
 #### Access
+
 - If you need password ask the admin
 - if you need access to mqtt explorer ask admin
-
-
-
-
 
 ## Authorization
 
 ### Lannootree
 
-| Action   |      Permission  |  Topic |
-|----------|-------------|------|
-| Publish & Subscribe |  Deny | $SYS/# |
-| Publish & Subscribe |    Allow   |  PM/Lannootree |
-
+| Action              | Permission | Topic         |
+| ------------------- | ---------- | ------------- |
+| Publish & Subscribe | Deny       | $SYS/#        |
+| Publish & Subscribe | Allow      | PM/Lannootree |
 
 ### Lannootree2
 
-| Action   |      Permission  |  Topic |
-|----------|-------------|------|
-| Publish & Subscribe |  Deny | $SYS/# |
-| Publish & Subscribe |    Allow   |  PM/Lannootree2 |
-
+| Action              | Permission | Topic          |
+| ------------------- | ---------- | -------------- |
+| Publish & Subscribe | Deny       | $SYS/#         |
+| Publish & Subscribe | Allow      | PM/Lannootree2 |
 
 ### Music Light tiles
 
-| Action   |      Permission  |  Topic |
-|----------|-------------|------|
-| Publish & Subscribe |  Deny | $SYS/# |
-| Publish & Subscribe |    Allow   |  PM/MLT |
-
+| Action              | Permission | Topic  |
+| ------------------- | ---------- | ------ |
+| Publish & Subscribe | Deny       | $SYS/# |
+| Publish & Subscribe | Allow      | PM/MLT |
 
 ### EOMarkers
 
-| Action   |      Permission  |  Topic |
-|----------|-------------|------|
-| Publish & Subscribe |  Deny | $SYS/# |
-| Publish & Subscribe |    Allow   |  PM/EOMarkers |
+| Action              | Permission | Topic        |
+| ------------------- | ---------- | ------------ |
+| Publish & Subscribe | Deny       | $SYS/#       |
+| Publish & Subscribe | Allow      | PM/EOMarkers |
+
+### Tracking light
+
+| Action              | Permission | Topic  |
+| ------------------- | ---------- | ------ |
+| Publish & Subscribe | Deny       | $SYS/# |
+| Publish & Subscribe | Allow      | PM/TL  |
