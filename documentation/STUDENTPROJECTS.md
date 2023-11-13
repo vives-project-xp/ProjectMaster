@@ -2,7 +2,6 @@
 Hier vermeldt men de structuur voor de topics.
 ## Table of contents
  - [connection](#connection)
- - [data](#data)
  - [logins](#logins)
  - [users](#users)
  - [Commands](#Commands)
@@ -16,22 +15,6 @@ Om te troubleshooten maak een verbinding met de de MQTT explorer
 ![imageConection](./img/imageConection.png)
 
 
-## Data
-maak een json aan en geef dit aan de Admins die dan de json toevoegen aan de data.
-vb van json:
-```json
-{
-    "name":"MLT1",
-    "group":"MLT",
-    "deviceType":"light",
-    "rgb":"true"
-}
-```
- - name: name device
- - group: project name
- - devicetype: type of device to add (see [MQTT integrations](https://www.home-assistant.io/integrations/MQTT/) at **MQTT Discovery**)
- - otherTopic Bool: add a topic command when true (can [add more topics](#topics))
-
 ## Logins
 ### Info
 Men verkrijgt een gebruikers naam (meestal de project naam) met een wachtwoord. 
@@ -44,7 +27,7 @@ vb: vives project heeft username vives met passwoord student om in te loggen op 
 **GEEF NOOIT EEN PASWOORD AAN IEMAND BUITEN JE PROJECT OF ZET PASWOORDEN IN EEN COMMIT!!!**
 
 ## Users
-elk groep kan alleen op hun eigen project werken.
+elk groep kan alleen op hun eigen device werken.
 
 ## Commands
 ### Info
