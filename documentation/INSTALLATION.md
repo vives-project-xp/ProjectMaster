@@ -2,14 +2,14 @@
 
 ## Table of contents
 
- - Backup in google drive 
- - Tailscale on Home Assistant
+ - Installing Backup in google drive 
+ - Installing Tailscale on Home Assistant
  - Installing docker
  - installing homeassistant with proxmox
  - installing EMQX 
+ - installing Keepass
 
-## Backup in google drive
-
+## Installing Backup in google drive
 
 ### Detailed Install Instructions
 1. Navigate in your Home Assistant frontend to Settings -> Add-ons -> Add-on Store (Bottom Right).
@@ -144,3 +144,21 @@ For photos and origninal content use this link [here](https://smarthomescene.com
 ## EMQX
 
 find on this page all there is to know about EMQX and how to set it up [here](.\EMQX.md).
+
+
+
+
+## Keepass 
+
+1. Go to https://keepass.info/download.html 
+2. choose the most updated keepass version 
+3. Choose the keepass 2 Version like show on the picture below
+![Alt text](img/keepass.PNG)
+4. You are going to be send to a other page dont worry just wait 5 seconds and close the tab
+5. open the .exe
+6. choose your language
+7. go through the rest of the installation steps
+8. you have successfully installed keepass
+
+
+For origninal content use this link [here](https://keepass.info/download.html)

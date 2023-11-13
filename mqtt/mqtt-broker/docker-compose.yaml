@@ -4,6 +4,7 @@ services:
   emqx1:
     image: emqx/emqx:5.2.1
     container_name: emqx
+    restart: always  # Add this line for auto-restart
     environment:
     - "EMQX_NODE_NAME=emqx@Projectmaster"
     - "EMQX_CLUSTER__DISCOVERY_STRATEGY=static"
