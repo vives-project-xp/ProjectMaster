@@ -14,15 +14,14 @@ const brokerPort2 = 38883;
 
 
 // Create an MQTT client
-
+var pswkey = fs.readFileSync("./psw.key");
 var options1 = {
   port: "1883",
   host: "projectmaster.devbit.be",
   protocol:'mqtt',
   rejectUnauthorized : false,
-  username : "Lannootree",
-  password : "Lannootree"
- 
+  username : "Lannootree", 
+  password : pswkey   // Lannootree
 };
 const client = mqtt.connect(options1);
 
