@@ -18,7 +18,6 @@ Om te troubleshooten maak een verbinding met de de MQTT explorer
 
 ## Data
 maak een json aan en geef dit aan de Admins die dan de json toevoegen aan de data.
-<!--pending change-->
 vb van json:
 ```json
 {
@@ -31,19 +30,21 @@ vb van json:
  - name: name device
  - group: project name
  - devicetype: type of device to add (see [MQTT integrations](https://www.home-assistant.io/integrations/MQTT/) at **MQTT Discovery**)
- - otherTopic Bool: add a topic command when true(can [add more topics](#topics))
+ - otherTopic Bool: add a topic command when true (can [add more topics](#topics))
 
 ## Logins
 ### Info
 Men verkrijgt een gebruikers naam (meestal de project naam) met een wachtwoord. 
 Met deze naam en wachtwoord logt men in op MQTT.
 
+elk device heeft één login wegens security bezorgdheden.
+
 vb: vives project heeft username vives met passwoord student om in te loggen op de MQTT.
 
 **GEEF NOOIT EEN PASWOORD AAN IEMAND BUITEN JE PROJECT OF ZET PASWOORDEN IN EEN COMMIT!!!**
 
 ## Users
-elk groep kan alleen op hun eigen project werken.<!--pending change-->
+elk groep kan alleen op hun eigen project werken.
 
 ## Commands
 ### Info
@@ -62,10 +63,15 @@ turn an device "ON" or "OFF"
 PM/project/command
 ```
 rgb topic: control color and brightness of a LED or other colored light
+
+Komt binnen als string met *r,g,b*
 ```json
 PM/project/rgb
 ```
-effect topic: select a specific effect(mostly from an array)
+
+effect topic: select a specific effect (mostly from an array)
+
+sends effectname back as string
 ```json
 PM/project/effect
 ```
