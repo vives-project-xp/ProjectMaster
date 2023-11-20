@@ -1,0 +1,61 @@
+# STUDENTPROJECTS
+Hier vermeldt men de structuur voor de topics.
+## Table of contents
+ - [connection](#connection)
+ - [logins](#logins)
+ - [users](#users)
+ - [Commands](#Commands)
+
+## Connection
+de mqtt broker = projectmaster.devbit.be
+given username and password in own project
+
+Om te troubleshooten maak een verbinding met de de MQTT explorer
+
+![imageConection](./img/imageConection.png)
+
+
+## Logins
+### Info
+Men verkrijgt een gebruikers naam (meestal de project naam) met een wachtwoord. 
+Met deze naam en wachtwoord logt men in op MQTT.
+
+elk device heeft één login wegens security bezorgdheden.
+
+vb: vives project heeft username vives met passwoord student om in te loggen op de MQTT.
+
+**GEEF NOOIT EEN PASWOORD AAN IEMAND BUITEN JE PROJECT OF ZET PASWOORDEN IN EEN COMMIT!!!**
+
+## Users
+elk groep kan alleen op hun eigen device werken.
+
+## Commands
+### Info
+Vraag om een topic door de admins van PM, deze topic is uniek per project en zal men ervoor zorgen dat er geen conflict is met andere projecten.
+
+### Commands
+Hier zullen de commands voor de topics gedocumenteerd.
+de head topic is PM
+verander de ../"project"/.. met de topic van je eigen project.
+Eerder had je een json (see [json](#data) doorgegeven aan de admin om te zorgen dat je aan de comandos kunt oproepen.
+> het is best dat je met project het type device dat je gaat gebruiken meegeeft, hierdoor kan je makelijker aan de Commands voor dat device.(see [devicetype](#data))
+
+command topic:
+turn an device "ON" or "OFF"
+```json
+PM/project/command
+```
+rgb topic: control color and brightness of a LED or other colored light
+
+Komt binnen als string met *r,g,b*
+```json
+PM/project/rgb
+```
+
+effect topic: select a specific effect (mostly from an array)
+
+sends effectname back as string
+```json
+PM/project/effect
+```
+
