@@ -32,7 +32,7 @@ These are the required software and hardware to run the system
 
 ### Software
  - Tailscale
- - home assistant
+ - Home assistant
  - Google drive for backup
  - Homeasssistant with proxmox
  - Docker
