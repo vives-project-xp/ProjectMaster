@@ -150,7 +150,12 @@ var projects = [
             "MiddenBounce",
             "uitbreidReactie",
             "vlakMuziek",
-            "ledsMeDb"
+            "ledsMeDb",
+            "ledsMeDbRGB",
+            "allLights",
+            "bubbelKleur",
+            "rainbow",
+            "rgbKleur"
         ]
     },{
         "name":"RL",
