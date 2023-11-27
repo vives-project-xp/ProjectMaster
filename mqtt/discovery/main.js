@@ -66,7 +66,8 @@ var projects = [
             "41. SHOWER",
             "42. TF2 ENGINEER",
             "43. ???",
-            "44. EO-ICT VIVES"
+            "44. EO-ICT VIVES",
+            "45. DISCO"
         ],
         "deviceType":"light"
     },{
@@ -109,7 +110,7 @@ var projects = [
         "name": "1091A8F10F7C",
         "group": "EOMarkers",
         "deviceType": "light",
-        "rgb": "true"
+        "colorFormat":"rgb"
     },{
         "name":"58CF79E37FA4",
         "group":"EOMarkers",
@@ -129,7 +130,7 @@ var projects = [
         "name": "58CF79E2A994",
         "group": "EOMarkers",
         "deviceType": "light",
-        "rgb": "true"
+        "colorFormat":"rgb"
     },{
         "name":"58CF79E3AB00",
         "group":"EOMarkers",
@@ -144,7 +145,13 @@ var projects = [
         "name":"DL",
         "group":"DL",
         "deviceType":"light",
-        "colorFormat":"rgb"
+        "colorFormat":"rgb",
+        "effects":[
+            "MiddenBounce",
+            "uitbreidReactie",
+            "vlakMuziek",
+            "ledsMeDb"
+        ]
     },{
         "name":"RL",
         "group":"RL",
@@ -155,6 +162,11 @@ var projects = [
         "group":"Aurora",
         "deviceType":"light",
         "colorFormat":"rgb"
+    },{
+        "name":"out_of_order",
+        "deviceType":"light",
+        "colorFormat":"rgb",
+        "group":"test"
     }
     ];
 
@@ -166,12 +178,14 @@ function topicBuilder(deviceType, name) {
 // Function to build the payload for each project
 function payloadBuilder(project) {
     var payload = {
+        //"unique_id": project.name,
         "effect_list": project.effects,
-        "name": project.name,
+        "name": project.group + "."+project.name,
         "command_topic": "PM/" + project.group + "/" + project.name + "/command",
         "effect_command_topic": "PM/" + project.group + "/" + project.name + "/effect",
         "brightness_command_topic": "PM/" + project.group + "/" + project.name + "/brightness",
-        "schema": project.schema
+        "schema": project.schema,
+        //"device":{"manufacturer":project.group,"model":project.name}
     }
     var rgbProperty = project.colorFormat + "_command_topic"
     payload[rgbProperty]="PM/" + project.group + "/" + project.name + "/"+project.colorFormat
