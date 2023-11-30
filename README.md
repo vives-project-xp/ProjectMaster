@@ -22,7 +22,7 @@
 ## Short Description
 
 Home Assistant is a Central Management System for projects made by students.
-This project uses MQTT, home-assistant, GitHub, node red and Node.js. With this management system, our aim is to interact with other projects or devices to make them available all within a central place.
+This project uses MQTT, home-assistant, Node.js. With this management system, our aim is to interact with other projects or devices to make them available all within a central place.
 Using this system, you can use a basic interaction to turn a device on or off, change color, change a scene and more.
 
 
