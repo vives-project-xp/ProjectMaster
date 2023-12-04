@@ -1,12 +1,14 @@
 import mqtt from "mqtt";
+import fs from "fs";
 
+var psw = fs.readFileSync("./psw.key");
 var options = {
     port: "1883",
     host: "projectmaster.devbit.be",
     protocol:'mqtt',
     rejectUnauthorized : false,
     username : "Discovery",
-    password : "Discovery"
+    password : psw
    
   };
 
