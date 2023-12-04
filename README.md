@@ -72,7 +72,9 @@ Download our Poster. [here](https://vivesonline-my.sharepoint.com/:f:/g/personal
 
 You can find The Bom list [here](./documentation/BOMLIST.md).
 
+## Student Info
 
+You can find The Student Information [here](./documentation/STUDENTPROJECTS.md).
 ## links
 
 - https://github.com/sabeechen/hassio-google-drive-backup 
