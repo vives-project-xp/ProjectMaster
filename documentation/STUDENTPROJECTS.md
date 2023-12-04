@@ -1,61 +1,82 @@
 # STUDENTPROJECTS
-Hier vermeldt men de structuur voor de topics.
+In this readme students can check how the data from home assistant will be sent over the broker
 ## Table of contents
- - [connection](#connection)
- - [logins](#logins)
- - [users](#users)
+ - [Connection](#connection)
+ - [Logins](#logins)
+ - [Users](#users)
  - [Commands](#Commands)
 
 ## Connection
-de mqtt broker = projectmaster.devbit.be
-given username and password in own project
+The MQTT broker is located on projectmaster.devbit.be
 
-Om te troubleshooten maak een verbinding met de de MQTT explorer
+You can use a program like MQTT Explorer for troubleshouting
 
 ![imageConection](./img/imageConection.png)
 
 
 ## Logins
 ### Info
-Men verkrijgt een gebruikers naam (meestal de project naam) met een wachtwoord. 
-Met deze naam en wachtwoord logt men in op MQTT.
+People will get a username and password in accordance to their project. In general the username will be the name of the project and the password will be unique for every device.
 
-elk device heeft één login wegens security bezorgdheden.
+Example (Not a real project): 
+    The project vives has the username vives on all their devices and every device has a unique password.
 
-vb: vives project heeft username vives met passwoord student om in te loggen op de MQTT.
-
-**GEEF NOOIT EEN PASWOORD AAN IEMAND BUITEN JE PROJECT OF ZET PASWOORDEN IN EEN COMMIT!!!**
+**Never share your password with anyone but your own team or the admins of PM**
 
 ## Users
-elk groep kan alleen op hun eigen device werken.
+Every student only has acces to their own projects' respective topics
+### Info
+In genereal the topics of all projects will be according to the following:
+```json
+PM/"project_naam"/"device_naam"
+```
+In this example project_name is the name of the project to which the device belongs and device_name is the name of the device itself.
 
 ## Commands
-### Info
-Vraag om een topic door de admins van PM, deze topic is uniek per project en zal men ervoor zorgen dat er geen conflict is met andere projecten.
 
 ### Commands
-Hier zullen de commands voor de topics gedocumenteerd.
-de head topic is PM
-verander de ../"project"/.. met de topic van je eigen project.
-Eerder had je een json (see [json](#data) doorgegeven aan de admin om te zorgen dat je aan de comandos kunt oproepen.
-> het is best dat je met project het type device dat je gaat gebruiken meegeeft, hierdoor kan je makelijker aan de Commands voor dat device.(see [devicetype](#data))
 
-command topic:
-turn an device "ON" or "OFF"
+The following topics are available. However which of these exactly need implementation will have to be told to the admins of Project Master because this has to be assigned uppon device creation.
+the topics are devided into two kinds. The ones that are available for every project. and the ones added upon device creation.
+
+#### Universal topics
+the command topic says whether a device should turn"ON" or "OFF"
 ```json
 PM/project/command
 ```
-rgb topic: control color and brightness of a LED or other colored light
+De waarde in deze topic is ON or OFF as a string
+#### Optional topics
 
-Komt binnen als string met *r,g,b*
-```json
-PM/project/rgb
-```
+- color topic: control color and brightness of a LED or other colored light
 
-effect topic: select a specific effect (mostly from an array)
 
-sends effectname back as string
-```json
-PM/project/effect
-```
+    ```json
+    PM/project/device/"color_format
+    ```
+    the following color_formats are supported
+    - hs (Hue and saturation)
+    - rgb (Red Green Blue)
+    - rgbw (Red Green Blue White)
+    - rgbww (Red Green Blue Cold_White Warm_White)
 
+    The data is sent on the topic as a string with the variables listed above (in said order) seperated by a comma.
+
+    For example rgb would be sent as
+
+    ```string
+    red,green,blue
+    ```
+
+- effect topic: select a specific effect (mostly from an array)
+    
+    The students should give the admins a list of all the effects they wish to add
+
+    sends effectname back as string under the following topic
+    ```json
+    PM/project/device/effect
+    ```
+
+- Other
+    
+    if projects want to use the broker for their own internal communication they can as long as they dont use any of the topics mentioned above and remain inside the correct project topic.
+    

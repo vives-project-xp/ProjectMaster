@@ -134,19 +134,12 @@ bash -c "$(wget -qLO - https://github.com/tteck/Proxmox/raw/main/vm/haos-vm.sh)"
 30. Finished, you’ve just install HA OS on Proxmox!
 
 
-
 For photos and origninal content use this link [here](https://smarthomescene.com/guides/how-to-install-home-assistant-on-proxmox-the-easy-way/)
-
-
-
-
 
 
 ## EMQX
 
 find on this page all there is to know about EMQX and how to set it up [here](.\EMQX.md).
-
-
 
 
 ## Keepass 
@@ -162,4 +155,8 @@ find on this page all there is to know about EMQX and how to set it up [here](.\
 8. you have successfully installed keepass
 
 
+<<<<<<< HEAD
 For origninal content use this link [here](https://keepass.info/download.html)
+=======
+For origninal content use this link [here](https://keepass.info/download.html)
+>>>>>>> 31758e13cd4591713dfcfa2a02db836181dc2025

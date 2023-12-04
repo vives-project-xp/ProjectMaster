@@ -22,7 +22,7 @@
 ## Short Description
 
 Home Assistant is a Central Management System for projects made by students.
-This project uses MQTT, home-assistant, GitHub, node red and Node.js. With this management system, our aim is to interact with other projects or devices to make them available all within a central place.
+This project uses MQTT, home-assistant, Node.js. With this management system, our aim is to interact with other projects or devices to make them available all within a central place.
 Using this system, you can use a basic interaction to turn a device on or off, change color, change a scene and more.
 
 
@@ -32,7 +32,7 @@ These are the required software and hardware to run the system
 
 ### Software
  - Tailscale
- - home assistant
+ - Home assistant
  - Google drive for backup
  - Homeasssistant with proxmox
  - Docker
@@ -40,6 +40,11 @@ These are the required software and hardware to run the system
 ### Hardware
 
 - Server
+- Draadloze Zigbee Schakelaar Met 8 Knoppen
+- Conbee 2 Deconz Zigbee USB Dongle
+- Raspberry PI 3B or Raspberry Pi 4 ModelB
+
+You can find all the information where we bought them[here](./documentation/BOMLIST.md).
 
 
 ## Installation

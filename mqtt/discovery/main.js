@@ -17,14 +17,15 @@ var projects = [
     {
         "name":"all",
         "group":"all",
-        "rgb":"true",
+        "colorFormat":"rgb",
         "deviceType":"light"
     },
     {
         "name":"Lannootree",
         "group":"Lannootree",
-        "rgb":"true",
+        "colorFormat":"rgb",
         "effects":[
+            "0. RAVE",
             "1. RUNNING PIKACHU",
             "2. VIVES",
             "3. QATAR",
@@ -65,69 +66,76 @@ var projects = [
             "41. SHOWER",
             "42. TF2 ENGINEER",
             "43. ???",
-            "44. EO-ICT VIVES"
+            "44. EO-ICT VIVES",
+            "45. DISCO"
         ],
         "deviceType":"light"
     },{
         "name":"MLT1",
         "group":"MLT",
         "deviceType":"light",
-        "rgb":"true"
+        "colorFormat":"rgbw"
     },{
         "name":"MLT2",
         "group":"MLT",
         "deviceType":"light",
-        "rgb":"true"
+        "colorFormat":"rgbw"
     },{
         "name":"MLT3",
         "group":"MLT",
         "deviceType":"light",
-        "rgb":"true"
+        "colorFormat":"rgbw"
     },{
+        "name":"MLT4",
+        "group":"MLT",
+        "deviceType":"light",
+        "colorFormat":"rgbw"
+    },
+    ,{
         "name":"58CF79E35BCC",
         "group":"EOMarkers",
         "deviceType":"light",
-        "rgb":"true"
+        "colorFormat":"rgb"
     },{
         "name":"58CF79E39D18",
         "group":"EOMarkers",
         "deviceType":"light",
-        "rgb":"true"
+        "colorFormat":"rgb"
     },{
         "name":"58CF79E3782C",
         "group":"EOMarkers",
         "deviceType":"light",
-        "rgb":"true"
+        "colorFormat":"rgb"
     },{
         "name": "1091A8F10F7C",
         "group": "EOMarkers",
         "deviceType": "light",
-        "rgb": "true"
+        "colorFormat":"rgb"
     },{
         "name":"58CF79E37FA4",
         "group":"EOMarkers",
         "deviceType":"light",
-        "rgb":"true"
+        "colorFormat":"rgb"
     },{
         "name":"58CF79E2C6C4",
         "group":"EOMarkers",
         "deviceType":"light",
-        "rgb":"true"
+        "colorFormat":"rgb"
     },{
         "name":"58CF79E29ABC",
         "group":"EOMarkers",
         "deviceType":"light",
-        "rgb":"true"
+        "colorFormat":"rgb"
     },{
         "name": "58CF79E2A994",
         "group": "EOMarkers",
         "deviceType": "light",
-        "rgb": "true"
+        "colorFormat":"rgb"
     },{
         "name":"58CF79E3AB00",
         "group":"EOMarkers",
         "deviceType":"light",
-        "rgb":"true"
+        "colorFormat":"rgb"
     },{
         "name": "58CF79E35F68",
         "group": "EOMarkers",
@@ -137,17 +145,33 @@ var projects = [
         "name":"DL",
         "group":"DL",
         "deviceType":"light",
-        "rgb":"true"
+        "colorFormat":"rgb",
+        "effects":[
+            "MiddenBounce",
+            "uitbreidReactie",
+            "vlakMuziek",
+            "ledsMeDb",
+            "ledsMeDbRGB",
+            "allLights",
+            "bubbelKleur",
+            "rainbow",
+            "rgbKleur"
+        ]
     },{
         "name":"RL",
         "group":"RL",
         "deviceType":"light",
-        "rgb":"true"
+        "colorFormat":"rgb"
     },{
         "name":"Aurora",
         "group":"Aurora",
         "deviceType":"light",
-        "rgb":"true"
+        "colorFormat":"rgb"
+    },{
+        "name":"out_of_order",
+        "deviceType":"light",
+        "colorFormat":"rgb",
+        "group":"test"
     }
     ];
 
@@ -158,26 +182,22 @@ function topicBuilder(deviceType, name) {
 
 // Function to build the payload for each project
 function payloadBuilder(project) {
-    return {
+    var payload = {
+        //"unique_id": project.name,
         "effect_list": project.effects,
-        "name": project.name,
+        "name": project.group + "."+project.name,
         "command_topic": "PM/" + project.group + "/" + project.name + "/command",
-        "rgb_command_topic": "PM/" + project.group + "/" + project.name + "/rgb",
         "effect_command_topic": "PM/" + project.group + "/" + project.name + "/effect",
         "brightness_command_topic": "PM/" + project.group + "/" + project.name + "/brightness",
-        "schema": project.schema
-    };
+        "schema": project.schema,
+        //"device":{"manufacturer":project.group,"model":project.name}
+    }
+    var rgbProperty = project.colorFormat + "_command_topic"
+    payload[rgbProperty]="PM/" + project.group + "/" + project.name + "/"+project.colorFormat
+    return payload;
 }
 
-function JSONPayloadBuilder(project) {
-    return {
-        "rgb_command_topic": "PM/" + project.group + "/" + project.name + "/rgb",
-        "color_mode": project.rgb,
-        "commandTopic": "PM/" + project.group + "/" + project.name + "/command",
-        "name": project.name,
-        "schema":"JSON"
-    };
-}
+
 
 var outputMsgs = [];
 
@@ -188,11 +208,9 @@ function sendProjects() {
       var schema = project.schema;
       var payload = {};
       var topic = topicBuilder(deviceType, project.name);
-      if (schema == "JSON") {
-        payload = JSONPayloadBuilder(project);
-      } else {
-        payload = payloadBuilder(project);
-      }
+      
+      payload = payloadBuilder(project);
+      
       console.log(topic)
       console.log(payload)
       client.publish(topic, JSON.stringify(payload));
