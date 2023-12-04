@@ -154,9 +154,5 @@ find on this page all there is to know about EMQX and how to set it up [here](.\
 7. go through the rest of the installation steps
 8. you have successfully installed keepass
 
+For origninal content use this link [here](https://keepass.info/download.html)
 
-<<<<<<< HEAD
-For origninal content use this link [here](https://keepass.info/download.html)
-=======
-For origninal content use this link [here](https://keepass.info/download.html)
->>>>>>> 31758e13cd4591713dfcfa2a02db836181dc2025
