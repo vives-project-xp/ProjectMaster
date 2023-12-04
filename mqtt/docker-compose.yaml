@@ -2,7 +2,6 @@ version: '3'
 services:
   emqx1:
       image: emqx/emqx:5.2.1
-      container_name: emqx
       restart: always  # Add this line for auto-restart
       environment:
       - "EMQX_NODE_NAME=emqx@Projectmaster"
@@ -19,11 +18,17 @@ services:
         - 18083:18083 
       volumes:
         - ./emqx1_data:/opt/emqx/data
-  app:
+
+  lannootree:
     build:
       context: .
       dockerfile: Dockerfile # Hier verwijst het naar je Dockerfile
     restart: always
 
+  # DISCOVERY:
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile # Hier verwijst het naar je Dockerfile
+  #   restart: always
 
   
