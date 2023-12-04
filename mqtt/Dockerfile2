@@ -1,0 +1,31 @@
+
+
+# Builder stage for project 'Lannootree'
+FROM node:latest as builder
+
+WORKDIR /mqtt/Lannootree
+
+COPY Lannootree/package.json ./
+RUN npm install
+
+COPY Lannootree .
+
+# Final stage
+FROM node:latest
+
+WORKDIR /mqtt
+
+# Copy the built files from both projects
+
+COPY --from=builder /mqtt/Lannootree /mqtt/Lannootree
+
+# Set any other configuration or settings
+
+# CMD to run both projects
+#CMD ["npm", "start", "--prefix", "discovery"]
+#CMD ["npm", "start", "--prefix", "Lannootree"]
+
+
+# CMD to run both projects
+
+CMD  cd /mqtt/Lannootree && npm start

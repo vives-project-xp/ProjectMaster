@@ -22,13 +22,13 @@ services:
   lannootree:
     build:
       context: .
-      dockerfile: Dockerfile # Hier verwijst het naar je Dockerfile
+      dockerfile: Dockerfile2 # Hier verwijst het naar je Dockerfile
     restart: always
 
-  # DISCOVERY:
-  #   build:
-  #     context: .
-  #     dockerfile: Dockerfile # Hier verwijst het naar je Dockerfile
-  #   restart: always
+  disvovery:
+    build:
+      context: .
+      dockerfile: Dockerfile # Hier verwijst het naar je Dockerfile
+    restart: always
 
   
