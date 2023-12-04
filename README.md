@@ -80,3 +80,5 @@ You can find The Student Information [here](./documentation/STUDENTPROJECTS.md).
 - https://github.com/sabeechen/hassio-google-drive-backup 
 - https://www.youtube.com/watch?v=okRHCU-FcgU&ab_channel=fixtSE
 - https://github.com/emqx/emqx
+- https://www.home-assistant.io/ 
+- 
