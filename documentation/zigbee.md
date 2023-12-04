@@ -163,6 +163,13 @@ nano /opt/zigbee2mqtt/data/configuration.yaml
     
  If everything works you should be able to connect to the ip address of the pi with port 8081 and see the gui from the zigbee2mqtt.
 
+
+ Now that everything works, we want systemctl to start Zigbee2MQTT automatically on boot, this can be done by executing:
+ ```sh
+    sudo systemctl enable zigbee2mqtt.service
+```
+
+
 5. Some tips that can be handy later:
 
 ```sh
@@ -181,6 +188,76 @@ sudo journalctl -u zigbee2mqtt.service -f
  For the 8 button zigbee switch: 
  klick in the gui on Permit join (all)
  hold the 2 top buttons until the ligth is on and then click on the top right button. the led should flicker now and hold it close to the gateway and it would connect and show up. 
+
+
+ ## start after boot
+
+ To run Zigbee2MQTT as daemon (in background) and start it automatically on boot we will run Zigbee2MQTT with systemctl.
+
+```sh
+# Create a systemctl configuration file for Zigbee2MQTT
+sudo nano /etc/systemd/system/zigbee2mqtt.service
+```
+
+
+Add the following to this file:
+```text
+[Unit]
+Description=zigbee2mqtt
+After=network.target
+
+[Service]
+Environment=NODE_ENV=production
+ExecStart=/usr/bin/npm start
+WorkingDirectory=/opt/zigbee2mqtt
+StandardOutput=inherit
+# Or use StandardOutput=null if you don't want Zigbee2MQTT messages filling syslog, for more options see systemd.exec(5)
+StandardError=inherit
+Restart=always
+RestartSec=5s
+User=root
+
+[Install]
+WantedBy=multi-user.target
+```
+
+Verify that the configuration works:
+
+```sh
+# Start Zigbee2MQTT
+sudo systemctl start zigbee2mqtt
+
+# Show status
+systemctl status zigbee2mqtt.service
+```
+
+Output should look like:
+
+```sh
+pi@raspberry:/opt/zigbee2mqtt $ systemctl status zigbee2mqtt.service
+● zigbee2mqtt.service - zigbee2mqtt
+   Loaded: loaded (/etc/systemd/system/zigbee2mqtt.service; disabled; vendor preset: enabled)
+   Active: active (running) since Thu 2018-06-07 20:27:22 BST; 3s ago
+ Main PID: 665 (npm)
+   CGroup: /system.slice/zigbee2mqtt.service
+           ├─665 npm
+           ├─678 sh -c node index.js
+           └─679 node index.js
+
+Jun 07 20:27:22 raspberry systemd[1]: Started zigbee2mqtt.
+Jun 07 20:27:23 raspberry npm[665]: > zigbee2mqtt@1.6.0 start /opt/zigbee2mqtt
+Jun 07 20:27:23 raspberry npm[665]: > node index.js
+Jun 07 20:27:24 raspberry npm[665]: Zigbee2MQTT:info  2019-11-09T13:04:01: Logging to directory: '/opt/zigbee2mqtt/data/log/2019-11-09.14-04-01'
+Jun 07 20:27:25 raspberry npm[665]: Zigbee2MQTT:info  2019-11-09T13:04:01: Starting Zigbee2MQTT version 1.6.0 (commit #720e393)
+```
+
+Now that everything works, we want systemctl to start Zigbee2MQTT automatically on boot, this can be done by executing:
+
+
+```sh
+sudo systemctl enable zigbee2mqtt.service
+
+```
 
  
 
