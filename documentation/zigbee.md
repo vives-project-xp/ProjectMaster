@@ -1,10 +1,11 @@
-# EMQX
+# zigbee2mqtt
 
 ## Table of contents
 
 * Openhabian installation
 * Zigbee2mqtt installation
 * connect buttons
+* boot startup
 
 ## Openhabian installation
 
