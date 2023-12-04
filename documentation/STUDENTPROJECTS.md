@@ -51,7 +51,7 @@ De waarde in deze topic is ON or OFF as a string
 
 
     ```json
-    PM/project/device/"color_format
+    PM/project/device/"color_format"
     ```
     the following color_formats are supported
     - hs (Hue and saturation)
