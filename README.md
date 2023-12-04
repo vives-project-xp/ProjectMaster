@@ -44,7 +44,7 @@ These are the required software and hardware to run the system
 - Conbee 2 Deconz Zigbee USB Dongle
 - Raspberry PI 3B or Raspberry Pi 4 ModelB
 
-You can find all the information where we bought them[here](./documentation/BOMLIST.md).
+You can find all the information where we bought them [here](./documentation/BOMLIST.md).
 
 
 ## Installation
