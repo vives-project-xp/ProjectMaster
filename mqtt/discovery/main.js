@@ -13,7 +13,7 @@ var options = {
 const client = mqtt.connect(options);
 console.log("Main");
 const HAtopic = "PM/homeassistant/";
-var projects = [
+var projects = [ //Add new devices here
     {
         "name":"all",
         "group":"all",
@@ -67,31 +67,15 @@ var projects = [
             "42. TF2 ENGINEER",
             "43. ???",
             "44. EO-ICT VIVES",
-            "45. DISCO"
+            "45. ARROW LEFT"
         ],
         "deviceType":"light"
     },{
-        "name":"MLT1",
+        "name":"58CF79D92940",
         "group":"MLT",
         "deviceType":"light",
         "colorFormat":"rgbw"
     },{
-        "name":"MLT2",
-        "group":"MLT",
-        "deviceType":"light",
-        "colorFormat":"rgbw"
-    },{
-        "name":"MLT3",
-        "group":"MLT",
-        "deviceType":"light",
-        "colorFormat":"rgbw"
-    },{
-        "name":"MLT4",
-        "group":"MLT",
-        "deviceType":"light",
-        "colorFormat":"rgbw"
-    },
-    ,{
         "name":"58CF79E35BCC",
         "group":"EOMarkers",
         "deviceType":"light",
@@ -151,13 +135,14 @@ var projects = [
             "uitbreidReactie",
             "vlakMuziek",
             "ledsMeDb",
+            "ledsMeDbFlikker",
             "ledsMeDbRGB",
             "allLights",
             "bubbelKleur",
             "rainbow",
             "rgbKleur"
         ]
-    },{
+    },{ 
         "name":"RL",
         "group":"RL",
         "deviceType":"light",
@@ -166,7 +151,7 @@ var projects = [
         "name":"Aurora",
         "group":"Aurora",
         "deviceType":"light",
-        "colorFormat":"rgb"
+        "colorFormat":"rgbw"
     },{
         "name":"out_of_order",
         "deviceType":"light",
@@ -175,7 +160,7 @@ var projects = [
     }
     ];
 
-
+    
 function topicBuilder(deviceType, name) {
     return HAtopic + deviceType + "/" + name + "/config";
 }
