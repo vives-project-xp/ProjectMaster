@@ -77,13 +77,36 @@ function setEffect(effect) {
 }
 
 function Switch1(effect) {
-  const gvd = effect.toString(); 
+  const effectSwitch = effect.toString(); 
   
-  console.log(firstNumber); // This will log the first number in the string
+  console.log(effectSwitch); // This will log the first number in the string
+  if(effectSwitch == "on_1"){
+    setEffect("5");
+  }else if(effectSwitch == "on_2"){
+    setEffect("20");
+
+  }else if(effectSwitch == "on_3"){
+    setEffect("45");
+
+  }else if(effectSwitch == "on_4"){
+    setEffect("32");
+
+  }else if(effectSwitch == "off_1"){
+    off("OFF")
+
+  }else if(effectSwitch == "off_2"){
+    setColor("163,202,255")
+
+  }else if(effectSwitch == "off_3"){
+    setColor("163,20,185")
+
+  }else if(effectSwitch == "off_4"){
+    setColor("55,125,255")
+
+  }
 
 
-  client2.publish('controller/in', `{"command": "play_media", "media_id": ${firstNumber}}`); //`{"command": "play_media", "media_id": ${media}}`    ${data} ==> werkt niet    {"command": "play_media", "media_id": "3"}   ${message.toString()}
-  console.log(`Message published tree : {"command": "play_media", "media_id": ${firstNumber}}` );
+  
 }
 
 function off(messageOFF){
@@ -154,9 +177,9 @@ client.on('connect', () => {
   console.log('Connected to Switch1');
   
   // Subscribe to a topic
-  client.subscribe('zigbee2mqtt/Switch1', (err) => {
+  client.subscribe('zigbee2mqtt/Switch1/action', (err) => {
     if (!err) {
-      console.log('Subscribed to "zigbee2mqtt/Switch1"');
+      console.log('Subscribed to "zigbee2mqtt/Switch1/action"');
     }
   });
 
@@ -191,7 +214,7 @@ client.on('message', (topic, message) => {
       
       off(message);
       
-    }else if((topic == "zigbee2mqtt/Switch1")){
+    }else if((topic == "zigbee2mqtt/Switch1/action")){
       Switch1(message);
     }
     
