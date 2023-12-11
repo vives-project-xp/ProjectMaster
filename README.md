@@ -81,4 +81,7 @@ You can find The Student Information [here](./documentation/STUDENTPROJECTS.md).
 - https://www.youtube.com/watch?v=okRHCU-FcgU&ab_channel=fixtSE
 - https://github.com/emqx/emqx
 - https://www.home-assistant.io/ 
-- 
+- https://www.zigbee2mqtt.io/guide/installation/01_linux.html#optional-running-as-a-daemon-with-systemctl
+- https://www.openhab.org/docs/installation/openhabian.html
+- https://www.youtube.com/watch?v=-U4-ZFYftLY
+- https://www.openhab.org/download/
