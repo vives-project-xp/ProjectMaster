@@ -1,5 +1,3 @@
-
-
 # Builder stage for project 'Lannootree'
 FROM node:latest as builder
 
@@ -29,3 +27,11 @@ COPY --from=builder /mqtt/Lannootree /mqtt/Lannootree
 # CMD to run both projects
 
 CMD  cd /mqtt/Lannootree && npm start
+
+
+
+
+
+
+  
+  
