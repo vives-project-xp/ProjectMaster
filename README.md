@@ -44,7 +44,7 @@ These are the required software and hardware to run the system
 - Conbee 2 Deconz Zigbee USB Dongle
 - Raspberry PI 3B or Raspberry Pi 4 ModelB
 
-You can find all the information where we bought them[here](./documentation/BOMLIST.md).
+You can find all the information where we bought them [here](./documentation/BOMLIST.md).
 
 
 ## Installation
@@ -72,9 +72,13 @@ Download our Poster. [here](https://vivesonline-my.sharepoint.com/:f:/g/personal
 
 You can find The Bom list [here](./documentation/BOMLIST.md).
 
+## Student Info
 
+You can find The Student Information [here](./documentation/STUDENTPROJECTS.md).
 ## links
 
 - https://github.com/sabeechen/hassio-google-drive-backup 
 - https://www.youtube.com/watch?v=okRHCU-FcgU&ab_channel=fixtSE
 - https://github.com/emqx/emqx
+- https://www.home-assistant.io/ 
+- 
