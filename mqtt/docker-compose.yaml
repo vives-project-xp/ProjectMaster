@@ -19,16 +19,4 @@ services:
       volumes:
         - ./emqx1_data:/opt/emqx/data
 
-  lannootree:
-    build:
-      context: .
-      dockerfile: Dockerfile2 # Hier verwijst het naar je Dockerfile
-    restart: always
-
-  disvovery:
-    build:
-      context: .
-      dockerfile: Dockerfile # Hier verwijst het naar je Dockerfile
-    restart: always
-
   
