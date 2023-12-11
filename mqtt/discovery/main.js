@@ -77,7 +77,7 @@ var projects = [ //Add new devices here
         "name":"58CF79D92940",
         "group":"MLT",
         "deviceType":"light",
-        "colorFormat":"rgbw"
+        "colorFormat":"rgb"
     },{
         "name":"58CF79E35BCC",
         "group":"EOMarkers",
