@@ -75,6 +75,9 @@ You can find The Bom list [here](./documentation/BOMLIST.md).
 ## Student Info
 
 You can find The Student Information [here](./documentation/STUDENTPROJECTS.md).
+
+## Homeassistant
+You can find The homeassistant Information [here](./documentation/homeassistant.md).
 ## links
 
 - https://github.com/sabeechen/hassio-google-drive-backup 
