@@ -75,6 +75,10 @@ You can find The Bom list [here](./documentation/BOMLIST.md).
 ## Student Info
 
 You can find The Student Information [here](./documentation/STUDENTPROJECTS.md).
+
+## Zigbee info
+
+look here: [here](./documentation/zigbee.md).
 ## links
 
 - https://github.com/sabeechen/hassio-google-drive-backup 
