@@ -200,7 +200,17 @@ var projects = [ //Add new devices here
         "name":"RL",
         "group":"RL",
         "deviceType":"light",
-        "colorFormat":"rgbw"
+        "colorFormat":"rgbw",
+        "effects":[
+            "turnOnRandomLEDs",
+            "blinkingStarlight",
+            "rainEffect",
+            "waveFade",
+            "sunriseEffect",
+            "rainbowEffect",
+            "rippleEffect",
+            "everyOther"
+        ]
     },{
         "name":"Aurora",
         "group":"Aurora",
