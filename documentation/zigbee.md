@@ -159,7 +159,7 @@ nano /opt/zigbee2mqtt/data/configuration.yaml
 
 ```sh
     cd /opt/zigbee2mqtt
-    npm start
+    sudo npm start
 ```
     
  If everything works you should be able to connect to the ip address of the pi with port 8081 and see the gui from the zigbee2mqtt.
