@@ -78,7 +78,7 @@ function setEffect(effect) {
 
 function Switch1(effect) {
   const effectID = effect.toString(); 
-  var firstNumber = parseFloat(effectID.match(/\d+/));
+  
   console.log(firstNumber); // This will log the first number in the string
 
 
