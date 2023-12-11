@@ -21,12 +21,13 @@ The following variables have been implemented per device devided by being option
 
     this is the project under which the device falls
     this is also the name of the project under the mqtt topic
+    do make sure the group name is the same as the login credentials for the broker
 - deviceType :
 
     this is the devicetype as required by HomeAssistant
     for further info about all possible device types look up the mqtt documentation by homeassistant [MQTT integrations](https://www.home-assistant.io/integrations/MQTT/)
 
-#### optional
+#### Optional
 - colorFormat:
 
     this is the colorFormat that HomeAssistant can use see [Studentprojects](STUDENTPROJECTS.md) for a list of all supported colorformats
