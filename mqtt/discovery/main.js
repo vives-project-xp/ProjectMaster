@@ -1,7 +1,8 @@
 import mqtt from "mqtt";
 import fs from "fs";
 
-var psw = fs.readFileSync("./psw.key");
+var psw = fs.readFileSync("./psw.key")
+console.log(psw)
 var options = {
     port: "1883",
     host: "projectmaster.devbit.be",
@@ -128,7 +129,58 @@ var projects = [ //Add new devices here
         "deviceType": "light",
         "rgb": "true"
     },{
-        "name":"DL",
+        "name":"DL0",
+        "group":"DL",
+        "deviceType":"light",
+        "colorFormat":"rgb",
+        "effects":[
+            "MiddenBounce",
+            "uitbreidReactie",
+            "vlakMuziek",
+            "ledsMeDb",
+            "ledsMeDbFlikker",
+            "ledsMeDbRGB",
+            "allLights",
+            "bubbelKleur",
+            "rainbow",
+            "rgbKleur"
+        ]
+    },{
+        "name":"DL1",
+        "group":"DL",
+        "deviceType":"light",
+        "colorFormat":"rgb",
+        "effects":[
+            "MiddenBounce",
+            "uitbreidReactie",
+            "vlakMuziek",
+            "ledsMeDb",
+            "ledsMeDbFlikker",
+            "ledsMeDbRGB",
+            "allLights",
+            "bubbelKleur",
+            "rainbow",
+            "rgbKleur"
+        ]
+    },{
+        "name":"DL2",
+        "group":"DL",
+        "deviceType":"light",
+        "colorFormat":"rgb",
+        "effects":[
+            "MiddenBounce",
+            "uitbreidReactie",
+            "vlakMuziek",
+            "ledsMeDb",  
+            "ledsMeDbFlikker",
+            "ledsMeDbRGB",
+            "allLights",
+            "bubbelKleur",
+            "rainbow",
+            "rgbKleur"
+        ]
+    },{
+        "name":"DLAll",
         "group":"DL",
         "deviceType":"light",
         "colorFormat":"rgb",
@@ -148,7 +200,7 @@ var projects = [ //Add new devices here
         "name":"RL",
         "group":"RL",
         "deviceType":"light",
-        "colorFormat":"rgb"
+        "colorFormat":"rgbw"
     },{
         "name":"Aurora",
         "group":"Aurora",
