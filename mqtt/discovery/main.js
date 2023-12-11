@@ -200,17 +200,17 @@ var projects = [ //Add new devices here
         "name":"RL",
         "group":"RL",
         "deviceType":"light",
-        "colorFormat":"rgbw",
-        "effects":[
-            "0. Tracking",
-            "1. Static",
-
-        ]
+        "colorFormat":"rgbw"
     },{
         "name":"Aurora",
         "group":"Aurora",
         "deviceType":"light",
-        "colorFormat":"rgbw"
+        "colorFormat":"rgbw",
+        "effects":[
+            "0. Tracking",
+            "1. Static"
+
+        ]
     },{
         "name":"out_of_order",
         "deviceType":"light",
