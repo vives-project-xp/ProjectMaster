@@ -76,6 +76,16 @@ function setEffect(effect) {
     console.log(`Message published tree : {"command": "play_media", "media_id": ${firstNumber}}` );
 }
 
+function Switch1(effect) {
+  const effectID = effect.toString(); 
+  var firstNumber = parseFloat(effectID.match(/\d+/));
+  console.log(firstNumber); // This will log the first number in the string
+
+
+  client2.publish('controller/in', `{"command": "play_media", "media_id": ${firstNumber}}`); //`{"command": "play_media", "media_id": ${media}}`    ${data} ==> werkt niet    {"command": "play_media", "media_id": "3"}   ${message.toString()}
+  console.log(`Message published tree : {"command": "play_media", "media_id": ${firstNumber}}` );
+}
+
 function off(messageOFF){
       const command = messageOFF.toString();
       if(command == "OFF"){
@@ -139,6 +149,20 @@ client.on('connect', () => {
 
 });
 
+
+client.on('connect', () => {
+  console.log('Connected to Switch1');
+  
+  // Subscribe to a topic
+  client.subscribe('zigbee2mqtt/Switch1', (err) => {
+    if (!err) {
+      console.log('Subscribed to "zigbee2mqtt/Switch1"');
+    }
+  });
+
+
+});
+
 client2.on('connect', () => {
   console.log('Connected to MQTT broker Tree');
   
@@ -167,6 +191,8 @@ client.on('message', (topic, message) => {
       
       off(message);
       
+    }else if((topic == "zigbee2mqtt/Switch1")){
+      Switch1(message);
     }
     
 
