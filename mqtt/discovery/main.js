@@ -8,7 +8,7 @@ var options = {
     host: "projectmaster.devbit.be",
     protocol:'mqtt',
     rejectUnauthorized : false,
-    username : "Discovery",
+    username : "PM",
     password : psw
    
   };
