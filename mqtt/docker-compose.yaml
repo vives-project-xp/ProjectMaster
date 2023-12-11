@@ -2,13 +2,13 @@ version: '3'
 services:
   lannootree:
     build:
-      context: .
-      dockerfile: Dockerfile2 # Hier verwijst het naar je Dockerfile
+      context: ./Lannootree
+      dockerfile: Dockerfile # Hier verwijst het naar je Dockerfile
     restart: always
 
   discovery:
     build:
-      context: .
+      context: ./discovery
       dockerfile: Dockerfile # Hier verwijst het naar je Dockerfile
     restart: always
 
