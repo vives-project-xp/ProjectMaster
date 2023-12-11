@@ -77,7 +77,7 @@ function setEffect(effect) {
 }
 
 function Switch1(effect) {
-  const effectID = effect.toString(); 
+  const gvd = effect.toString(); 
   
   console.log(firstNumber); // This will log the first number in the string
 
