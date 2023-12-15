@@ -76,7 +76,7 @@ You can find The Bom list [here](./documentation/BOMLIST.md).
 
 You can find The Student Information [here](./documentation/STUDENTPROJECTS.md).
 
-## Homeassistant
+## Home assistant
 You can find The homeassistant Information [here](./documentation/homeassistant.md).
 
 ## links
