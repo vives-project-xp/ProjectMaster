@@ -21,12 +21,13 @@ The following variables have been implemented per device devided by being option
 
     this is the project under which the device falls
     this is also the name of the project under the mqtt topic
+    do make sure the group name is the same as the login credentials for the broker
 - deviceType :
 
     this is the devicetype as required by HomeAssistant
     for further info about all possible device types look up the mqtt documentation by homeassistant [MQTT integrations](https://www.home-assistant.io/integrations/MQTT/)
 
-#### optional
+#### Optional
 - colorFormat:
 
     this is the colorFormat that HomeAssistant can use see [Studentprojects](STUDENTPROJECTS.md) for a list of all supported colorformats
@@ -52,3 +53,26 @@ example of a project added inside of the json:
     ]
 }
 ```
+## Home Assistant lovelace
+All projects added to the projects inside of the discovery nodeJS app will automatically show up under the PM dashboard inside of HomeAssistant [here](http://10.11.0.6:8123/lovelace/default_view).
+However if you want a specific dashboard for a single project you will need to add this yourself.
+
+### Add dashboard
+
+To add a dashboard for a project inside of HA you press the +
+Then you can add an autoentitycard inside of the dashboard and paste in the following.
+
+```yaml
+type: custom:auto-entities
+filter:
+  include:
+    - name: /ProjectName/
+  exclude: []
+sort:
+  method: domain
+  numeric: true
+card:
+  type: entities
+  show_header_toggle: false
+```
+Do take care to change the filter ProjectName to the correct name

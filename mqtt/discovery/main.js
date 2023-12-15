@@ -1,13 +1,14 @@
 import mqtt from "mqtt";
 import fs from "fs";
 
-var psw = fs.readFileSync("./psw.key");
+var psw = fs.readFileSync("./psw.key")
+console.log(psw)
 var options = {
     port: "1883",
     host: "projectmaster.devbit.be",
     protocol:'mqtt',
     rejectUnauthorized : false,
-    username : "Discovery",
+    username : "PM",
     password : psw
    
   };
@@ -76,7 +77,7 @@ var projects = [ //Add new devices here
         "name":"58CF79D92940",
         "group":"MLT",
         "deviceType":"light",
-        "colorFormat":"rgbw"
+        "colorFormat":"rgb"
     },{
         "name":"58CF79E35BCC",
         "group":"EOMarkers",
@@ -128,7 +129,58 @@ var projects = [ //Add new devices here
         "deviceType": "light",
         "rgb": "true"
     },{
-        "name":"DL",
+        "name":"DL0",
+        "group":"DL",
+        "deviceType":"light",
+        "colorFormat":"rgb",
+        "effects":[
+            "MiddenBounce",
+            "uitbreidReactie",
+            "vlakMuziek",
+            "ledsMeDb",
+            "ledsMeDbFlikker",
+            "ledsMeDbRGB",
+            "allLights",
+            "bubbelKleur",
+            "rainbow",
+            "rgbKleur"
+        ]
+    },{
+        "name":"DL1",
+        "group":"DL",
+        "deviceType":"light",
+        "colorFormat":"rgb",
+        "effects":[
+            "MiddenBounce",
+            "uitbreidReactie",
+            "vlakMuziek",
+            "ledsMeDb",
+            "ledsMeDbFlikker",
+            "ledsMeDbRGB",
+            "allLights",
+            "bubbelKleur",
+            "rainbow",
+            "rgbKleur"
+        ]
+    },{
+        "name":"DL2",
+        "group":"DL",
+        "deviceType":"light",
+        "colorFormat":"rgb",
+        "effects":[
+            "MiddenBounce",
+            "uitbreidReactie",
+            "vlakMuziek",
+            "ledsMeDb",  
+            "ledsMeDbFlikker",
+            "ledsMeDbRGB",
+            "allLights",
+            "bubbelKleur",
+            "rainbow",
+            "rgbKleur"
+        ]
+    },{
+        "name":"DLAll",
         "group":"DL",
         "deviceType":"light",
         "colorFormat":"rgb",
@@ -148,12 +200,27 @@ var projects = [ //Add new devices here
         "name":"RL",
         "group":"RL",
         "deviceType":"light",
-        "colorFormat":"rgb"
+        "colorFormat":"rgbw",
+        "effects":[
+            "turnOnRandomLEDs",
+            "blinkingStarlight",
+            "rainEffect",
+            "waveFade",
+            "sunriseEffect",
+            "rainbowEffect",
+            "rippleEffect",
+            "everyOther"
+        ]
     },{
         "name":"Aurora",
         "group":"Aurora",
         "deviceType":"light",
-        "colorFormat":"rgbw"
+        "colorFormat":"rgbw",
+        "effects":[
+            "0. Tracking",
+            "1. Static"
+
+        ]
     },{
         "name":"out_of_order",
         "deviceType":"light",
