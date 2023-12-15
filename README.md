@@ -15,8 +15,8 @@
 - [powerpoint](#Powerpoint)
 - [Poster](#Poster)
 - [Bom-list](./documentation/BOMLIST.md)
-- [EMQX](./documentation/EMQX.md)
 - [Students](./documentation/STUDENTPROJECTS.md)
+- [Home Assitant](./documentation/Homeassistant.md)
 - [links](#links)
 
 ## Short Description
@@ -79,9 +79,6 @@ You can find The Student Information [here](./documentation/STUDENTPROJECTS.md).
 ## Homeassistant
 You can find The homeassistant Information [here](./documentation/homeassistant.md).
 
-## Zigbee info
-
-look here: [here](./documentation/zigbee.md).
 ## links
 
 - https://github.com/sabeechen/hassio-google-drive-backup 
