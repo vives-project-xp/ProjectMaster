@@ -53,11 +53,19 @@ You can find all the information to install this project [here](./documentation/
 
 ## Maintainers
 
-Made by:
- - Ibe Packo
- - Robbe Verhelst
- - Xander Claessens
- - Gert De Craemere
+Team ​
+
+Gert De Craimire, 3de jaar Elektronica ict , ​
+Software & AI​
+
+Ibe Packo , 2de jaar Elektronica ict , ​
+Network & sytem managment​
+
+Xander Claessens , 2de jaar Elektronica ict ,​
+Network & sytem managment ​
+
+Robbe Verhelst , 2de jaar Elektronica ict ,​
+Network & sytem managment ​
 
 
 ## Powerpoint
