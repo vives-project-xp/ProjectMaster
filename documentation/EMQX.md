@@ -4,7 +4,6 @@
 
 * Installation
 * Clients
-* Security
 
 ## Installation
 
@@ -62,9 +61,7 @@ services:
 5. run the docker compose  file
 
 ```YML
-
  docker-compose up
-
 ```
 
 #### documentation
@@ -73,73 +70,20 @@ https://www.emqx.io/docs/en/latest/deploy/install-docker.html
 
 ## Clients
 
-### Lannootree
+### usernames
 
-username: Lannootree
-
-### EOMarkers
-
-username:
-
-- 10:91:A8:F1:0F:7C
-- 58:CF:79:E2:9A:BC
-- 58:CF:79:E2:C6:C4
-- 58:CF:79:E3:7F:A4
-
-### Tracking light
-
-username : Aurora
-
-### Dancing light
-
-username : DL
-
-### Raining leds
-
-username : RL
-
-### Nodered
-
-username : Nodered
+  - Aurora
+  - lannootree
+  - Dancing light(DL)
+  - Raining leds(RL)
+  - Music light Tiles(MLT)
+  - EOMarkers
 
 #### Access
 
 - If you need password ask the admin
-- if you need access to mqtt explorer ask admin
+- if you need access to mqtt explorer use the Username and Password you got from the admin
 
-## Authorization
+### Topics
+ Every Project has his own topic where they can send and recieve data from (PM/{username}/{devices})
 
-### Lannootree
-
-| Action              | Permission | Topic         |
-| ------------------- | ---------- | ------------- |
-| Publish & Subscribe | Deny       | $SYS/#        |
-| Publish & Subscribe | Allow      | PM/Lannootree |
-
-### Lannootree2
-
-| Action              | Permission | Topic          |
-| ------------------- | ---------- | -------------- |
-| Publish & Subscribe | Deny       | $SYS/#         |
-| Publish & Subscribe | Allow      | PM/Lannootree2 |
-
-### Music Light tiles
-
-| Action              | Permission | Topic  |
-| ------------------- | ---------- | ------ |
-| Publish & Subscribe | Deny       | $SYS/# |
-| Publish & Subscribe | Allow      | PM/MLT |
-
-### EOMarkers
-
-| Action              | Permission | Topic        |
-| ------------------- | ---------- | ------------ |
-| Publish & Subscribe | Deny       | $SYS/#       |
-| Publish & Subscribe | Allow      | PM/EOMarkers |
-
-### Tracking light
-
-| Action              | Permission | Topic  |
-| ------------------- | ---------- | ------ |
-| Publish & Subscribe | Deny       | $SYS/# |
-| Publish & Subscribe | Allow      | PM/TL  |
