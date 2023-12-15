@@ -8,6 +8,7 @@
  - Installing docker
  - installing homeassistant with proxmox
  - installing EMQX 
+ - installing Zigbee
  - installing Keepass
 
 ## Installing Backup in google drive
@@ -140,6 +141,12 @@ For photos and origninal content use this link [here](https://smarthomescene.com
 ## EMQX
 
 find on this page all there is to know about EMQX and how to set it up [here](.\EMQX.md).
+
+## Zigbee
+
+find on this page all there is to know about Zigbee and how to set it up [here](.\zigbee.md).
+
+
 
 
 ## Keepass 

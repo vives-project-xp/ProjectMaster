@@ -4,6 +4,7 @@
 
 * Installation
 * Clients
+* Dashboard
 
 ## Installation
 
@@ -25,9 +26,10 @@
 
 3. make the git ignore
 
-```YML
+so your data is not shared to github
 
-emqx1_data
+```YML
+.emqx1_data
 ```
 
 4. Make a docker compose file
@@ -87,3 +89,22 @@ https://www.emqx.io/docs/en/latest/deploy/install-docker.html
 ### Topics
  Every Project has his own topic where they can send and recieve data from (PM/{username}/{devices})
 
+
+
+### Dashboard
+
+this is the main dashboard where you can see the basic things.
+
+<b>Things like </b>
+  - amount of messages
+  - Amount of connections/ live connections
+  - amount of topics
+  - amount of subscriptions at that moment
+
+<b>There is also the node information where you can find</b>
+- The name of the node
+- the uptime
+- the CPU and Memory load 
+- and so much more
+
+<img src="img/EMQX.PNG" alt="EMQX image">
