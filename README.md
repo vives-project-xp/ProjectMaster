@@ -16,7 +16,7 @@
 - [Poster](#Poster)
 - [Bom-list](./documentation/BOMLIST.md)
 - [Students](./documentation/STUDENTPROJECTS.md)
-- [Home Assitant](./documentation/Homeassistant.md)
+- [Home Assitant](./documentation/homeassistant.md)
 - [links](#links)
 
 ## Short Description
