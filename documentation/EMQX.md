@@ -107,4 +107,4 @@ this is the main dashboard where you can see the basic things.
 - the CPU and Memory load 
 - and so much more
 
-![Alt text](img/EMQX.PNG)
+<img src="img/EMQX.PNG" alt="EMQX image">
