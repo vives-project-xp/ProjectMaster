@@ -15,7 +15,7 @@
 - [powerpoint](#Powerpoint)
 - [Poster](#Poster)
 - [Bom-list](#BOM-list)
-- [Students](#Student)
+- [Students](#Student-info)
 - [Home Assitant](#home-assistant)
 - [links](#links)
 
