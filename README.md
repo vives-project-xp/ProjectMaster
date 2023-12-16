@@ -14,9 +14,9 @@
 - [Maintainers](#maintainers)
 - [powerpoint](#Powerpoint)
 - [Poster](#Poster)
-- [Bom-list](#BOMlist)
-- [Students](#Students)
-- [Home Assitant](#homeassistant)
+- [Bom-list](#BOM-list)
+- [Students](#Student)
+- [Home Assitant](#Home)
 - [links](#links)
 
 ## Short Description
@@ -76,7 +76,7 @@ Download our powerpoint. [here](https://vivesonline-my.sharepoint.com/:f:/g/pers
 
 Download our Poster. [here](https://vivesonline-my.sharepoint.com/:f:/g/personal/r0937303_student_vives_be/EnZxGHNR7BBNhbjRPSCZOQEB5Z1SUFSEeUQmNq461D9abg?e=Ti41gJ)
 
-## BOM list
+## BOM-list
 
 You can find The Bom list [here](./documentation/BOMLIST.md).
 
