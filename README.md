@@ -14,9 +14,9 @@
 - [Maintainers](#maintainers)
 - [powerpoint](#Powerpoint)
 - [Poster](#Poster)
-- [Bom-list](./documentation/BOMLIST.md)
-- [Students](./documentation/STUDENTPROJECTS.md)
-- [Home Assitant](./documentation/homeassistant.md)
+- [Bom-list](#BOMlist)
+- [Students](#Students)
+- [Home Assitant](#homeassistant)
 - [links](#links)
 
 ## Short Description
