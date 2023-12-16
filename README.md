@@ -16,7 +16,7 @@
 - [Poster](#Poster)
 - [Bom-list](#BOM-list)
 - [Students](#Student)
-- [Home Assitant](#Home)
+- [Home Assitant](#home-assistant)
 - [links](#links)
 
 ## Short Description
