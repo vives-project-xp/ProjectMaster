@@ -140,7 +140,7 @@ For photos and origninal content use this link [here](https://smarthomescene.com
 
 ## EMQX
 
-find on this page all there is to know about EMQX and how to set it up [here](.\EMQX.md).
+find on this page all there is to know about EMQX and how to set it up [here](.documentation/EMQX.md).
 
 ## Zigbee
 
