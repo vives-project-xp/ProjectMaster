@@ -202,14 +202,15 @@ var projects = [ //Add new devices here
         "deviceType":"light",
         "colorFormat":"rgbw",
         "effects":[
-            "turnOnRandomLEDs",
+            
             "blinkingStarlight",
             "rainEffect",
             "waveFade",
             "sunriseEffect",
             "rainbowEffect",
             "rippleEffect",
-            "everyOther"
+            "fire",
+            "breathingEffect"
         ]
     },{
         "name":"Aurora",
